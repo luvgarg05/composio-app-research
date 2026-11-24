@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 apps, one research agent · Composio take-home · Lavanya Garg</title>
+<meta name="description" content="Agent-built research on auth, access, API surface and MCP for 100 apps, with verification loops and measured accuracy.">
+<style>
+:root{--ink:#14161a;--soft:#5b6270;--line:#e4e6ea;--bg:#fbfbfa;--card:#fff;--acc:#4f46e5;--acc-t:#eef0ff;
+--good:#15803d;--good-t:#e7f6ec;--warn:#b45309;--warn-t:#fdf3e1;--bad:#b91c1c;--bad-t:#fdeaea;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;font:15px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{padding:44px 0 18px;border-bottom:1px solid var(--line);background:#fff}
+.kicker{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--acc)}
+h1{font-size:34px;line-height:1.15;margin:8px 0 10px;letter-spacing:-.02em}
+h2{font-size:22px;margin:0 0 6px;letter-spacing:-.01em}h3{font-size:15px;margin:0 0 8px}
+.sub{color:var(--soft);max-width:820px}
+nav.toc{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-size:13px}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.lead{color:var(--soft);margin:0 0 18px;max-width:860px}
+.headlines{display:grid;gap:10px;margin:22px 0 4px;padding:0;list-style:none}
+.headlines li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:8px;padding:12px 16px}
+.headlines b{font-weight:650}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:18px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.kpi .v{font-size:28px;font-weight:700;letter-spacing:-.02em}.kpi .l{color:var(--soft);font-size:13px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}h1{font-size:27px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.bar{display:grid;grid-template-columns:150px 1fr 44px;align-items:center;gap:10px;margin:7px 0;font-size:13px}
+.bar .t{height:12px;background:#f0f1f4;border-radius:6px;overflow:hidden}.bar .f{height:100%;background:var(--acc);border-radius:6px}
+.bar .n{text-align:right;font:12px var(--mono);color:var(--soft)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:8px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--soft);background:#f7f7f8;position:sticky;top:0;z-index:1}
+.heat td{text-align:center;font:12px var(--mono)}.heat td:first-child{text-align:left;font:13px Inter,system-ui,sans-serif}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;white-space:nowrap;margin:1px 2px 1px 0;border:1px solid var(--line);background:#f6f6f7}
+.p-good{background:var(--good-t);color:var(--good);border-color:#cfe9d7}.p-warn{background:var(--warn-t);color:var(--warn);border-color:#f3dfb8}
+.p-bad{background:var(--bad-t);color:var(--bad);border-color:#f5cccc}.p-acc{background:var(--acc-t);color:var(--acc);border-color:#dadcff}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+.tools input,.tools select{font:inherit;font-size:13px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.tools input{flex:1;min-width:200px}
+.tablebox{max-height:640px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:#fff}
+.ev a{font:11px var(--mono);margin-right:6px}
+.muted{color:var(--soft)}.small{font-size:12.5px}
+.pipe{width:100%;height:auto}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}.steps li{counter-increment:s;padding:8px 0 8px 38px;position:relative;border-bottom:1px dashed var(--line)}
+.steps li:before{content:counter(s);position:absolute;left:0;top:8px;width:26px;height:26px;border-radius:50%;background:var(--acc-t);color:var(--acc);font:600 13px/26px var(--mono);text-align:center}
+code,pre{font-family:var(--mono);font-size:12.5px}pre{background:#14161a;color:#e8e8ea;padding:14px 16px;border-radius:10px;overflow:auto}
+.accrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.accbox{border-radius:10px;padding:16px;border:1px solid var(--line);background:#fff}.accbox .v{font-size:30px;font-weight:700}
+.accbox.final{border-color:#cfe9d7;background:var(--good-t)}
+footer{padding:28px 0 50px;color:var(--soft);font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">Composio · AI Product Ops Intern take-home · Lavanya Garg</div>
+  <h1 id="title">Which of 100 apps can become agent toolkits today?</h1>
+  <p class="sub">A research agent (built on Composio's SDK + an LLM) investigated auth, developer access, API surface and MCP availability for 100 apps. Every answer cites a source; a verification loop and human checks measure accuracy.</p>
+  <ul class="headlines" id="headlines"></ul>
+  <div class="kpis" id="kpis"></div>
+  <nav class="toc"><a href="#patterns">Patterns</a><a href="#findings">Findings (100 apps)</a><a href="#agent">The agent</a><a href="#verification">Verification</a><a href="#proof">Run it yourself</a><a href="results.json">results.json</a><a href="results.csv">results.csv</a></nav>
+</div></header>
+
+<section id="patterns"><div class="wrap">
+  <h2>Patterns</h2><p class="lead" id="patterns-lead">How the 100 apps cluster by auth, access and buildability.</p>
+  <div class="grid3">
+    <div class="card"><h3>Auth methods (apps can have several)</h3><div id="auth-bars"></div></div>
+    <div class="card"><h3>How a developer gets credentials</h3><div id="access-bars"></div></div>
+    <div class="card"><h3>Buildable as an agent toolkit today?</h3><div id="build-bars"></div><h3 style="margin-top:16px">MCP server</h3><div id="mcp-bars"></div></div>
+  </div>
+  <div class="card" style="margin-top:18px"><h3>Access model by category (count of apps)</h3><div style="overflow:auto"><table class="heat" id="heat"></table></div>
+    <p class="small muted" id="heat-note"></p></div>
+  <div class="grid2" style="margin-top:18px">
+    <div class="card"><h3>Easy wins: self-serve + broad API, not yet obvious toolkits</h3><div id="wins"></div></div>
+    <div class="card"><h3>Needs outreach / partnership</h3><div id="outreach"></div></div>
+  </div>
+</div></section>
+
+<section id="findings"><div class="wrap">
+  <h2>Findings: all 100 apps</h2><p class="lead">Filter, search, and open the cited source behind each answer (A = auth, D = developer access, M = MCP).</p>
+  <div class="tools"><input id="q" placeholder="Search app, category, blocker…"><select id="fcat"><option value="">All categories</option></select>
+    <select id="facc"><option value="">Any access</option></select><select id="fbuild"><option value="">Any buildability</option></select></div>
+  <div class="tablebox"><table id="tbl"><thead><tr><th>#</th><th>App</th><th>What it does</th><th>Auth</th><th>Developer access</th><th>API</th><th>MCP</th><th>Buildable</th><th>Main blocker</th><th>Evidence</th></tr></thead><tbody></tbody></table></div>
+  <p class="small muted" id="count"></p>
+</div></section>
+
+<section id="agent"><div class="wrap">
+  <h2>The agent</h2><p class="lead">A Python pipeline that researches each app with Composio's tool-calling SDK, reads the vendor's own docs, and fills a strict schema with a citation per field.</p>
+  <svg class="pipe" viewBox="0 0 1100 190" role="img" aria-label="Pipeline: apps list, Composio search, read official docs, LLM extraction, verification loop, human check, report">
+    <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#9aa0aa"/></marker></defs>
+    <g font-family="Inter,system-ui,sans-serif" font-size="13" text-anchor="middle">
+      <g><rect x="10" y="40" width="130" height="80" rx="10" fill="#fff" stroke="#d6d8de"/><text x="75" y="72" font-weight="600">100 apps</text><text x="75" y="92" fill="#5b6270" font-size="11.5">name + official hint</text></g>
+      <g><rect x="170" y="40" width="160" height="80" rx="10" fill="#eef0ff" stroke="#4f46e5"/><text x="250" y="66" font-weight="600">Composio search</text><text x="250" y="86" fill="#5b6270" font-size="11.5">TAVILY_SEARCH (Instant)</text><text x="250" y="102" fill="#5b6270" font-size="11.5">auth · access · MCP queries</text></g>
+      <g><rect x="360" y="40" width="150" height="80" rx="10" fill="#fff" stroke="#d6d8de"/><text x="435" y="66" font-weight="600">Read sources</text><text x="435" y="86" fill="#5b6270" font-size="11.5">official site first,</text><text x="435" y="102" fill="#5b6270" font-size="11.5">vendor docs ranked up</text></g>
+      <g><rect x="540" y="40" width="150" height="80" rx="10" fill="#fff" stroke="#d6d8de"/><text x="615" y="66" font-weight="600">LLM extraction</text><text x="615" y="86" fill="#5b6270" font-size="11.5">strict schema +</text><text x="615" y="102" fill="#5b6270" font-size="11.5">URL per field</text></g>
+      <g><rect x="720" y="40" width="170" height="80" rx="10" fill="#eef0ff" stroke="#4f46e5"/><text x="805" y="66" font-weight="600">Verification loop</text><text x="805" y="86" fill="#5b6270" font-size="11.5">7 automatic checks →</text><text x="805" y="102" fill="#5b6270" font-size="11.5">2nd model re-researches</text></g>
+      <g><rect x="920" y="40" width="170" height="80" rx="10" fill="#e7f6ec" stroke="#15803d"/><text x="1005" y="66" font-weight="600">Human + audit</text><text x="1005" y="86" fill="#5b6270" font-size="11.5">sample vs vendor docs</text><text x="1005" y="102" fill="#5b6270" font-size="11.5">→ measured accuracy</text></g>
+      <g stroke="#9aa0aa" stroke-width="1.4" fill="none"><path d="M140 80H168" marker-end="url(#ar)"/><path d="M330 80H358" marker-end="url(#ar)"/><path d="M510 80H538" marker-end="url(#ar)"/><path d="M690 80H718" marker-end="url(#ar)"/><path d="M890 80H918" marker-end="url(#ar)"/>
+        <path d="M805 120V160H435V122" marker-end="url(#ar)" stroke-dasharray="4 4"/></g>
+      <text x="620" y="178" fill="#5b6270" font-size="11.5">failed checks → targeted vendor-domain re-research</text>
+    </g></svg>
+  <div class="grid2" style="margin-top:14px">
+    <div class="card"><h3>What the agent does</h3><ol class="steps" id="does"></ol></div>
+    <div class="card"><h3>Where a human was needed</h3><ol class="steps" id="human"></ol></div>
+  </div>
+</div></section>
+
+<section id="verification"><div class="wrap">
+  <h2>Verification: how we know it's right</h2><p class="lead" id="ver-lead">Accuracy is measured on a stratified sample checked field-by-field against the vendor's own docs (2 apps per category).</p>
+  <div class="accrow" id="accrow"></div>
+  <div class="grid2">
+    <div class="card"><h3>Accuracy by field</h3><table id="accfield"></table></div>
+    <div class="card"><h3>Automatic checks (what the loop caught)</h3><table id="checks"></table></div>
+  </div>
+  <div class="card" style="margin-top:18px"><h3>Misses, shown honestly</h3><table id="misses"></table></div>
+  <div class="card" style="margin-top:18px"><h3>Example corrections made by the verification loop</h3><div id="fixes" class="small"></div></div>
+</div></section>
+
+<section id="proof"><div class="wrap">
+  <h2>Run it yourself</h2><p class="lead">Source, README and raw outputs: <a id="repo" href="#"></a></p>
+<pre>pip install -r requirements.txt          # composio, openai-compatible client, requests, bs4
+cp .env.example .env                      # COMPOSIO_API_KEY, GEMINI_API_KEY and/or GROQ_API_KEY
+python -m agent.research                  # pass 1: research all 100 apps (resumable, parallel)
+python -m agent.verify                    # pass 2: checks + re-research of failures
+python -m agent.score --make-sample       # check sheet (20 apps, 2 per category)
+python -m agent.score --final             # final = pass 2 + audited corrections
+python -m agent.score                     # accuracy: pass 1 vs pass 2 vs final
+python -m agent.build_page                # this page</pre>
+  <p class="small muted">Machine-readable outputs for other agents: <a href="results.json">results.json</a> · <a href="results.csv">results.csv</a>. Each row carries the evidence URL behind every field.</p>
+</div></section>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+const D=__DATA__;
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const rows=D.rows,n=rows.length,pct=x=>Math.round(100*x/n)+"%";
+const cnt=f=>rows.filter(f).length;
+const accessCls={"self-serve free":"p-good","self-serve trial":"p-good","open-source/self-host":"p-good","paid plan":"p-warn","admin/app approval":"p-warn","partner/sales gated":"p-bad","unclear":""};
+const buildCls={"yes":"p-good","partial":"p-warn","no":"p-bad"};
+const mcpCls={"official":"p-acc","community":"","none found":"p-warn"};
+const pill=(t,c)=>`<span class="pill ${c||""}">${esc(t)}</span>`;
+// headlines
+(D.ins.headlines||[]).forEach(h=>$("#headlines").insertAdjacentHTML("beforeend",`<li>${h}</li>`));
+if(D.ins.title)$("#title").textContent=D.ins.title;
+const fin=(D.acc.overall||{});
+const kp=[[n,"apps researched by the agent"],[pct(cnt(r=>r.auth.includes("OAuth2"))),"support OAuth2"],
+ [pct(cnt(r=>["self-serve free","self-serve trial","open-source/self-host"].includes(r.access))),"self-serve for developers"],
+ [pct(cnt(r=>r.buildable==="yes")),"buildable today"],[pct(cnt(r=>r.mcp==="official")),"have an official MCP"],
+ [fin.final!=null?fin.final+"%":(fin.pass2!=null?fin.pass2+"%":"—"),"accuracy on the checked sample"]];
+$("#kpis").innerHTML=kp.map(([v,l])=>`<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+// bars
+const bars=(el,pairs)=>{const m=Math.max(...pairs.map(p=>p[1]),1);$(el).innerHTML=pairs.map(([k,v])=>`<div class="bar"><span>${esc(k)}</span><div class="t"><div class="f" style="width:${100*v/m}%"></div></div><span class="n">${v}</span></div>`).join("")};
+bars("#auth-bars",D.stats.auth);bars("#access-bars",D.stats.access);bars("#build-bars",D.stats.build);bars("#mcp-bars",D.stats.mcp);
+// heatmap
+const accs=["self-serve free","self-serve trial","open-source/self-host","paid plan","admin/app approval","partner/sales gated","unclear"].filter(a=>D.stats.access.some(x=>x[0]===a));
+const shade=(a,v)=>{if(!v)return"";const base={"partner/sales gated":"185,28,28","paid plan":"180,83,9","admin/app approval":"180,83,9","unclear":"91,98,112"}[a]||"21,128,61";return`background:rgba(${base},${0.12+0.13*v})`};
+$("#heat").innerHTML=`<tr><th>Category</th>${accs.map(a=>`<th>${esc(a)}</th>`).join("")}</tr>`+D.stats.cats.map(c=>`<tr><td>${esc(c)}</td>${accs.map(a=>{const v=D.stats.by_cat[c][a]||0;return`<td style="${shade(a,v)}">${v||"·"}</td>`}).join("")}</tr>`).join("");
+if(D.ins.heat_note)$("#heat-note").innerHTML=D.ins.heat_note;
+if(D.ins.patterns_lead)$("#patterns-lead").innerHTML=D.ins.patterns_lead;
+const listApps=(el,arr,note)=>$(el).innerHTML=arr.length?arr.map(r=>`<div style="margin:4px 0">${pill(r.app,"")}<span class="small muted">${esc(note(r))}</span></div>`).join(""):"<span class='muted'>—</span>";
+listApps("#wins",rows.filter(r=>["self-serve free","open-source/self-host"].includes(r.access)&&r.buildable==="yes"&&r.breadth==="broad").slice(0,14),r=>" "+r.auth.join(", ")+(r.mcp==="official"?" · official MCP":""));
+listApps("#outreach",rows.filter(r=>["partner/sales gated","admin/app approval"].includes(r.access)||r.buildable==="no"),r=>" "+(r.blocker||r.access));
+if(D.ins.wins_note)$("#wins").insertAdjacentHTML("afterbegin",`<p class="small muted">${D.ins.wins_note}</p>`);
+if(D.ins.outreach_note)$("#outreach").insertAdjacentHTML("afterbegin",`<p class="small muted">${D.ins.outreach_note}</p>`);
+// table
+const opts=(sel,vals)=>vals.forEach(v=>$(sel).insertAdjacentHTML("beforeend",`<option>${esc(v)}</option>`));
+opts("#fcat",D.stats.cats);opts("#facc",accs);opts("#fbuild",["yes","partial","no"]);
+const evl=(r)=>[["A","auth_methods"],["D","access"],["M","mcp"]].filter(([_,k])=>r.evidence[k]).map(([l,k])=>`<a href="${esc(r.evidence[k])}" target="_blank" rel="noopener" title="${esc(r.evidence[k])}">${l}</a>`).join("");
+function render(){const q=$("#q").value.toLowerCase(),c=$("#fcat").value,a=$("#facc").value,b=$("#fbuild").value;
+ const f=rows.filter(r=>(!c||r.category===c)&&(!a||r.access===a)&&(!b||r.buildable===b)&&(!q||JSON.stringify(r).toLowerCase().includes(q)));
+ $("#tbl tbody").innerHTML=f.map(r=>`<tr><td class="muted">${r.id}</td><td><b>${esc(r.app)}</b><div class="small muted">${esc(r.category)}</div></td><td class="small">${esc(r.what)}</td><td>${r.auth.map(x=>pill(x)).join("")}</td><td>${pill(r.access,accessCls[r.access])}</td><td class="small">${esc(r.api)}<div class="muted">${esc(r.breadth)}</div></td><td>${pill(r.mcp,mcpCls[r.mcp])}</td><td>${pill(r.buildable,buildCls[r.buildable])}</td><td class="small">${esc(r.blocker)}</td><td class="ev">${evl(r)}</td></tr>`).join("");
+ $("#count").textContent=`${f.length} of ${n} apps shown`}
+["#q","#fcat","#facc","#fbuild"].forEach(s=>$(s).addEventListener("input",render));render();
+// agent
+const li=(el,arr)=>$(el).innerHTML=(arr||[]).map(x=>`<li>${x}</li>`).join("");
+li("#does",D.ins.does);li("#human",D.ins.human);
+// verification
+const A=D.acc;const box=(l,v,c)=>`<div class="accbox ${c||""}"><div class="small muted">${l}</div><div class="v">${v!=null?v+"%":"—"}</div></div>`;
+$("#accrow").innerHTML=box("Pass 1: agent alone",A.overall?.pass1)+box("Pass 2: after verification loop",A.overall?.pass2)+box("Final: after independent audit",A.overall?.final,"final");
+if(A.per_field)$("#accfield").innerHTML="<tr><th>Field</th><th>Pass 1</th><th>Pass 2</th><th>Final</th></tr>"+Object.entries(A.per_field).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${v.pass1??"—"}%</td><td>${v.pass2??"—"}%</td><td><b>${v.final??"—"}%</b></td></tr>`).join("");
+if(A.sample_size)$("#ver-lead").innerHTML=`Accuracy is measured on <b>${A.sample_size} apps</b> (2 per category, chosen at random, seed 42) checked against the vendor's own docs, field by field. ${D.ins.ver_note||""}`;
+const V=D.vlog||{};if(V.checks)$("#checks").innerHTML="<tr><th>Check</th><th>Rows flagged</th></tr>"+V.checks.map(([k,v])=>`<tr><td>${esc(k)}</td><td>${v}</td></tr>`).join("");
+$("#misses").innerHTML=(A.misses&&A.misses.length)?"<tr><th>App</th><th>Field</th><th>Agent said</th><th>Docs say</th><th>Why</th></tr>"+A.misses.map(m=>`<tr><td>${esc(m.app)}</td><td>${esc(m.field)}</td><td>${esc(Array.isArray(m.agent)?m.agent.join(", "):m.agent)}</td><td>${esc(m.truth)}</td><td class="small">${esc(m.note)}</td></tr>`).join(""):"<tr><td class='muted'>No misses in the final pass on the sample.</td></tr>";
+$("#fixes").innerHTML=(V.examples||[]).map(e=>`<div style="margin:6px 0">${pill(e.app)}${esc(e.change)}</div>`).join("")||"<span class='muted'>—</span>";
+$("#repo").href=D.repo;$("#repo").textContent=D.repo.replace("https://","");
+$("#foot").innerHTML=`Built by Lavanya Garg for Composio · data: ${esc(D.source)} · ${n} apps · <a href="${D.repo}">source</a>`;
+</script>
+</body>
+</html>

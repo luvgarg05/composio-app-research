@@ -1,0 +1,3036 @@
+[
+ {
+  "id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "hint": "salesforce.com",
+  "what": "The #1 AI CRM | Salesforce",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://salesforce.com",
+   "auth_methods": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+   "access": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+   "api_type": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+   "api_breadth": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+   "mcp": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+   "buildable": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: evidence URL changed from ZoomInfo to Salesforce Developer Quick Start (vendor docs confirm free Developer Edition access)"
+  ]
+ },
+ {
+  "id": 2,
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "hint": "hubspot.com",
+  "what": "HubSpot | Software & Tools for your Business",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://hubspot.com",
+   "auth_methods": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "access": "https://developers.hubspot.com/docs/developer-tooling/platform/apis-by-tier",
+   "api_type": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "api_breadth": "https://developers.hubspot.com/docs/developer-tooling/platform/apis-by-tier",
+   "mcp": "https://developers.hubspot.com/ai-tools/mcp",
+   "buildable": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+   "blocker": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "hint": "pipedrive.com",
+  "what": "Sales CRM & Pipeline Management Software",
+  "auth": [
+   "OAuth2",
+   "API key"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://pipedrive.com",
+   "auth_methods": "https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key",
+   "access": "https://pipedrive.com",
+   "api_type": "https://developers.pipedrive.com/docs/api/v1",
+   "api_breadth": "https://developers.pipedrive.com/docs/api/v1",
+   "mcp": "https://www.pipedrive.com/en/features/mcp-server",
+   "buildable": "https://developers.pipedrive.com/docs/api/v1"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: community -> official (Vendor's own site at pipedrive.com/en/features/mcp-server explicitly describes the 'official Pipedrive MCP server' and states it is an official connector in Claude and ChatGPT)",
+   "auth_methods: evidence updated -> https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key (The previous evidence page only covered OAuth2. The new page explicitly documents the 'personal API key' method, satisfying the check for API key documentation)"
+  ]
+ },
+ {
+  "id": 4,
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "hint": "attio.com",
+  "what": "The CRM for agentic revenue",
+  "auth": [
+   "OAuth2",
+   "API key",
+   "Basic"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://attio.com",
+   "auth_methods": "https://docs.attio.com/rest-api/guides/authentication",
+   "access": "https://attio.com/help/reference/apps/generating-an-api-key",
+   "api_type": "https://docs.attio.com/rest-api/guides/authentication",
+   "api_breadth": "https://docs.attio.com/mcp/overview",
+   "mcp": "https://docs.attio.com/mcp/overview",
+   "buildable": "https://docs.attio.com/mcp/overview"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 5,
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "hint": "twenty.com (open-source CRM)",
+  "what": "#1 Open Source CRM",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://twenty.com",
+   "auth_methods": "https://docs.twenty.com/developers/extend/api",
+   "access": "https://docs.twenty.com/developers/extend/api",
+   "api_type": "https://docs.twenty.com/developers/extend/api",
+   "api_breadth": "https://docs.twenty.com/developers/extend/api",
+   "mcp": "https://docs.twenty.com/developers/extend/mcp",
+   "buildable": "https://docs.twenty.com/developers/extend/api"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "audit: Official MCP confirmed in Twenty's own docs (evidence was just the homepage)."
+  ]
+ },
+ {
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "hint": "podio.com",
+  "what": "Work Management Platform for collaboration and workflow automation",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://podio.com",
+   "auth_methods": "https://developers.podio.com/authentication",
+   "access": "https://developers.podio.com/index/faq",
+   "api_type": "https://developers.podio.com/authentication",
+   "api_breadth": "https://podio.com",
+   "mcp": "https://mcp.podio.com/",
+   "buildable": "https://developers.podio.com/authentication",
+   "blocker": "https://developers.podio.com/authentication",
+   "confidence": "https://developers.podio.com/authentication"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "mcp: official -> official (evidence updated to vendor-hosted MCP server at mcp.podio.com)",
+   "audit: mcp.podio.com is on Podio's own domain and uses Podio OAuth, but the page does not name its operator; kept 'official' at medium confidence."
+  ]
+ },
+ {
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "hint": "zoho.com/crm",
+  "what": "Top-rated Sales CRM Software",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://zoho.com/crm",
+   "auth_methods": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "access": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+   "api_type": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+   "api_breadth": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+   "mcp": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+   "buildable": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "hint": "close.com",
+  "what": "Close CRM – The CRM that does the work",
+  "auth": [
+   "OAuth2",
+   "Basic"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://close.com",
+   "auth_methods": "https://developer.close.com/api/overview",
+   "access": "https://close.com",
+   "api_type": "https://developer.close.com/api/overview",
+   "api_breadth": "https://developer.close.com/api/overview",
+   "mcp": "https://close.com/integrations/close-mcp",
+   "buildable": "https://developer.close.com/api/overview"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 9,
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "hint": "copper.com",
+  "what": "CRM software company for service businesses",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://copper.com",
+   "auth_methods": "https://developer.copper.com/introduction/requests.html",
+   "access": "https://developer.copper.com/introduction/requests.html",
+   "api_type": "https://developer.copper.com/",
+   "api_breadth": "https://developer.copper.com/",
+   "mcp": "https://github.com/dazanza/copper-mcp",
+   "buildable": "https://developer.copper.com/"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "auth_methods: ['Basic'] -> ['OAuth2', 'Basic'] (Docs explicitly describe OAuth2.0 as an alternative to API keys, and API keys are sent via HTTP Basic Auth)",
+   "access: 'self-serve trial' -> 'paid plan' (Sources indicate API is available on paid plans like Basic/Professional/Business, with no mention of a free tier or trial for API access)",
+   "audit: Copper keys go in a custom X-PW-AccessToken header (API key), not HTTP Basic; OAuth 2.0 exists for third-party apps."
+  ]
+ },
+ {
+  "id": 10,
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "hint": "api.docs.dealcloud.com",
+  "what": "DealCloud API Documentation",
+  "auth": [
+   "OAuth2",
+   "API key",
+   "Basic",
+   "JWT/signed"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://api.docs.dealcloud.com",
+   "auth_methods": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+   "access": "https://api.docs.dealcloud.com/docs/apikeys",
+   "api_type": "https://api.docs.dealcloud.com",
+   "api_breadth": "https://api.docs.dealcloud.com",
+   "mcp": "https://api.docs.dealcloud.com/mcp",
+   "buildable": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "hint": "zendesk.com",
+  "what": "Customer service and support platform for managing enquiries across all channels",
+  "auth": [
+   "Basic",
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://zendesk.com",
+   "auth_methods": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+   "access": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development",
+   "api_type": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+   "api_breadth": "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+   "mcp": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+   "buildable": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: community -> official (Zendesk docs describe an official 'Zendesk MCP server' and 'Zendesk Bridge' for connecting external AI agents)",
+   "auth_methods: ['Basic', 'Bearer/PAT token'] -> ['Basic', 'Bearer/PAT token', 'OAuth2'] (Docs explicitly list OAuth access token authentication)"
+  ]
+ },
+ {
+  "id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "hint": "intercom.com",
+  "what": "A complete system for human and AI customer service",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://intercom.com",
+   "auth_methods": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "access": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+   "api_type": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "api_breadth": "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+   "mcp": "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+   "buildable": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "hint": "freshdesk.com",
+  "what": "AI-Powered Customer Service Software",
+  "auth": [
+   "API key",
+   "Basic"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://freshdesk.com",
+   "auth_methods": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+   "access": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+   "api_type": "https://developers.freshdesk.com/api",
+   "api_breadth": "https://developers.freshdesk.com/api",
+   "mcp": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+   "buildable": "https://developers.freshdesk.com/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "hint": "front.com",
+  "what": "All-in-one support platform",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://front.com",
+   "auth_methods": "https://dev.frontapp.com/reference/introduction",
+   "access": "https://front.com/pricing",
+   "api_type": "https://dev.frontapp.com/reference/introduction",
+   "api_breadth": "https://dev.frontapp.com/reference/introduction",
+   "mcp": "https://community.front.com/api-news-updates-40/the-front-mcp-server-is-here-beta-3712",
+   "buildable": "https://dev.frontapp.com/reference/introduction"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: self-serve trial -> self-serve trial (confirmed by pricing page 'Try for Free' and developer docs mentioning developer account)",
+   "buildable: yes -> yes (confirmed by comprehensive API docs and MCP server availability)"
+  ]
+ },
+ {
+  "id": 15,
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "hint": "usepylon.com",
+  "what": "Agentic B2B Support platform",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://usepylon.com",
+   "auth_methods": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+   "access": "https://heydeacon.com/resources/pylon-pricing",
+   "api_type": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base",
+   "api_breadth": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base",
+   "mcp": "https://www.usepylon.com/integrations/mcp",
+   "buildable": "https://docs.usepylon.com/pylon-docs/developer/api/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: partner/sales gated -> paid plan (The API is available on the Professional plan, which is a standard paid tier, not sales-gated; the previous 'partner/sales gated' classification was incorrect and inconsistent with buildable=yes)"
+  ]
+ },
+ {
+  "id": 16,
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "hint": "liveagent.com",
+  "what": "Cloud help desk software with email, live chat, phone, social media and AI agents.",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://liveagent.com",
+   "auth_methods": "https://support.liveagent.com/066804-LiveAgent-API; https://support.liveagent.com/150554-AI-features",
+   "access": "https://www.liveagent.com/pricing/",
+   "api_type": "https://support.liveagent.com/066804-LiveAgent-API; https://support.liveagent.com/150554-AI-features",
+   "api_breadth": "https://www.liveagent.com/features/api/",
+   "mcp": "https://support.liveagent.com/150554-AI-features",
+   "buildable": "https://www.liveagent.com/features/api/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['OAuth2', 'API key'] -> ['API key', 'OAuth2'] (reordered to match evidence; both are explicitly supported: API key for REST API, OAuth 2.1 for MCP)",
+   "evidence.access: https://liveagent.com -> https://www.liveagent.com/pricing/ (pricing page explicitly states '30-day free trial no credit card')",
+   "evidence.api_type: https://support.liveagent.com/802463-REST-API -> https://support.liveagent.com/066804-LiveAgent-API; https://support.liveagent.com/150554-AI-features (REST API is listed as a subcategory under the main API page)",
+   "evidence.api_breadth: https://github.com/vinkius-labs/mcp-database/blob/main/mcps/liveagent.md -> https://www.liveagent.com/features/api/ (official page lists many API actions: retrieve companies, delete/create conversations, register customers, etc.)"
+  ]
+ },
+ {
+  "id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "hint": "plain.com",
+  "what": "Support infrastructure for humans & agents",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://plain.com",
+   "auth_methods": "https://www.plain.com/docs/graphql/authentication",
+   "access": "https://www.plain.com/blog/api-first-support-platforms",
+   "api_type": "https://www.plain.com/blog/api-first-support-platforms",
+   "api_breadth": "https://www.plain.com/blog/api-first-support-platforms",
+   "mcp": "https://help.plain.com/article/how-sidekick-accesses-tools-through-a-custom-mcp-server-8hjeeea72nrok0hn0lp7qkx9",
+   "buildable": "https://www.plain.com/docs/graphql/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "hint": "helpscout.com",
+  "what": "Help Scout: The AI-driven support platform for customer‑first brands",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://helpscout.com",
+   "auth_methods": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+   "access": "https://docs.helpscout.com/article/1140-mailbox-api",
+   "api_type": "https://developer.helpscout.com/mailbox-api",
+   "api_breadth": "https://developer.helpscout.com/mailbox-api/overview/authentication",
+   "mcp": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+   "buildable": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['OAuth2', 'Basic'] -> ['OAuth2'] (The authentication documentation explicitly states the API uses OAuth 2.0 and does not mention HTTP Basic authentication)"
+  ]
+ },
+ {
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "hint": "gorgias.com",
+  "what": "Conversational AI platform for Ecommerce",
+  "auth": [
+   "Basic"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://gorgias.com",
+   "auth_methods": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "access": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "api_type": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "api_breadth": "https://docs.gorgias.com/en-US/rest-api-208286",
+   "mcp": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+   "buildable": "https://docs.gorgias.com/en-US/rest-api-208286"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "hint": "gladly.com",
+  "what": "Agentic commerce platform built for top brands",
+  "auth": [
+   "Basic"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "partial",
+  "blocker": "API access requires a paid Gladly instance and admin approval to grant the 'API User' permission; no self-serve free tier or public sandbox.",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://gladly.com",
+   "auth_methods": "https://developer.gladly.com/rest",
+   "access": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+   "api_type": "https://developer.gladly.com/rest",
+   "api_breadth": "https://developer.gladly.com/rest",
+   "mcp": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+   "buildable": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: self-serve trial -> admin/app approval (Vendor docs state API access requires a user with the 'API User' permission, which is granted by a Gladly Administrator, and sandbox environments must be purchased via a CSM, indicating no self-serve free access.)",
+   "buildable: yes -> partial (Building a toolkit is possible but limited by the need for an existing paid Gladly instance and administrative approval to create API tokens.)"
+  ]
+ },
+ {
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "hint": "slack.com",
+  "what": "Slack connects your team with an AI‑powered work platform and productivity tools.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://slack.com",
+   "auth_methods": "https://docs.slack.dev/apis/web-api",
+   "access": "https://slack.com/pricing",
+   "api_type": "https://docs.slack.dev/apis/web-api",
+   "api_breadth": "https://docs.slack.dev/apis/web-api",
+   "mcp": "https://slack.com",
+   "buildable": "https://docs.slack.dev/apis/web-api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 22,
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "hint": "twilio.com",
+  "what": "Conversational AI and APIs for SMS, Email, Voice",
+  "auth": [
+   "Basic"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://twilio.com",
+   "auth_methods": "https://www.twilio.com/docs/iam/api",
+   "access": "https://twilio.com",
+   "api_type": "https://www.twilio.com/docs/iam/api",
+   "api_breadth": "https://www.twilio.com/docs/iam/api",
+   "mcp": "https://www.twilio.com/en-us/blog/introducing-twilio-alpha-mcp-server",
+   "buildable": "https://www.twilio.com/docs/iam/api",
+   "blocker": "https://www.twilio.com/docs/iam/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 23,
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "hint": "zoho.com/cliq",
+  "what": "Team chat & communication software for businesses",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://zoho.com/cliq",
+   "auth_methods": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+   "access": "https://zoho.com/cliq",
+   "api_type": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+   "api_breadth": "https://www.zoho.com/cliq/help/restapi/v3/introduction",
+   "mcp": "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html",
+   "buildable": "https://www.zoho.com/cliq/help/restapi/v3/introduction"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 24,
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "hint": "open.larksuite.com",
+  "what": "Lark is a collaboration platform and productivity suite for teams",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://open.larksuite.com",
+   "auth_methods": "https://github.com/larksuite/lark-openapi-mcp",
+   "access": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+   "api_type": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/oidc-access_token/create",
+   "api_breadth": "https://mcp.so/servers/lark-openapi-mcp",
+   "mcp": "https://github.com/larksuite/lark-openapi-mcp",
+   "buildable": "https://github.com/larksuite/lark-openapi-mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "evidence.auth_methods: https://open.larksuite.com/document/common-capabilities/sso/api/obtain-oauth-code -> https://github.com/larksuite/lark-openapi-mcp (The GitHub README explicitly states 'Obtain the App ID and App Secret, which will be used for API authentication', confirming the Bearer/PAT token method, whereas the previous evidence page was a generic SSO doc that didn't explicitly mention the token usage in the provided snippet)"
+  ]
+ },
+ {
+  "id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "hint": "pumble.com",
+  "what": "The all-in-one team communication app",
+  "auth": [
+   "API key"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://pumble.com",
+   "auth_methods": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+   "access": "https://pumble.com/pricing",
+   "api_type": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+   "api_breadth": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration",
+   "mcp": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+   "buildable": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "audit: Official MCP (mcp.pumble.com) confirmed on Pumble's help centre; previous evidence page was generic."
+  ]
+ },
+ {
+  "id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "hint": "discord.com",
+  "what": "Group chat that’s all fun & games",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://discord.com",
+   "auth_methods": "https://discord.com/developers/docs/reference#authentication",
+   "access": "https://docs.discord.com/developers/reference",
+   "api_type": "https://docs.discord.com/developers/reference",
+   "api_breadth": "https://docs.discord.com/developers/reference",
+   "mcp": "https://top-mcps.com/mcp/discord",
+   "buildable": "https://docs.discord.com/developers/reference"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "access: evidence updated from apis.io to docs.discord.com (vendor docs confirm free API access for developers)",
+   "audit: Discord API calls use 'Bot <token>' or OAuth2 Bearer tokens; HTTP Basic is not an API auth method."
+  ]
+ },
+ {
+  "id": 27,
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "hint": "core.telegram.org",
+  "what": "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed.",
+  "auth": [
+   "API key"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://core.telegram.org",
+   "auth_methods": "https://core.telegram.org/bots/api#authorizing-your-bot",
+   "access": "https://core.telegram.org",
+   "api_type": "https://core.telegram.org/gateway/api",
+   "api_breadth": "https://core.telegram.org",
+   "mcp": "https://github.com/chigwell/telegram-mcp",
+   "buildable": "https://core.telegram.org"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "auth_methods: ['API key', 'Bearer/PAT token', 'Other'] -> ['Bearer/PAT token'] (Removed 'API key' and 'Other' as they are not explicitly described in the provided vendor docs; 'Bearer/PAT token' is confirmed by the Gateway API docs showing 'Authorization: Bearer <token>').",
+   "access: evidence updated from https://www.upload-post.com/telegram-api to https://core.telegram.org (Vendor's own site states 'You are welcome to use both APIs free of charge').",
+   "audit: Telegram Bot API puts the bot token in the URL path (api.telegram.org/bot<token>/...), i.e. an API key, not a Bearer header."
+  ]
+ },
+ {
+  "id": 28,
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "hint": "developers.facebook.com/docs/whatsapp",
+  "what": "Enterprise‑grade APIs for messaging and calling on the WhatsApp Business Platform",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://developers.facebook.com/docs/whatsapp",
+   "auth_methods": "https://developers.facebook.com/docs/whatsapp",
+   "access": "https://developers.facebook.com/docs/whatsapp",
+   "api_type": "https://developers.facebook.com/docs/whatsapp",
+   "api_breadth": "https://developers.facebook.com/docs/whatsapp",
+   "mcp": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+   "buildable": "https://developers.facebook.com/docs/whatsapp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 29,
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "hint": "aircall.io",
+  "what": "AI-Powered Customer Communications Platform for SMBs & Enterprise",
+  "auth": [
+   "Basic",
+   "OAuth2"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://aircall.io/pricing",
+   "auth_methods": "https://developer.aircall.io/docs/authentication",
+   "access": "https://aircall.io/pricing",
+   "api_type": "https://developer.aircall.io/docs/authentication",
+   "api_breadth": "https://developers.aircall.io/api-references",
+   "mcp": "https://support.aircall.io/en-gb/articles/39677926959517",
+   "buildable": "https://developer.aircall.io/docs/authentication",
+   "confidence": "https://developer.aircall.io/docs/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "evidence.auth_methods: https://developer.aircall.io/docs/basic-authentication -> https://developer.aircall.io/docs/authentication (The previous evidence page only documented Basic Auth, but the new page explicitly documents both Basic and OAuth, resolving the failed check.)"
+  ]
+ },
+ {
+  "id": 30,
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "hint": "developer.vonage.com",
+  "what": "Communication & Network APIs",
+  "auth": [
+   "Basic",
+   "JWT/signed"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.vonage.com",
+   "auth_methods": "https://developer.vonage.com/en/verify/concepts/authentication",
+   "access": "https://www.vonage.com/communications-apis/pricing",
+   "api_type": "https://developer.vonage.com/en/verify/concepts/authentication",
+   "api_breadth": "https://developer.vonage.com",
+   "mcp": "https://developer.vonage.com/en/mcp-server/overview",
+   "buildable": "https://developer.vonage.com/en/verify/concepts/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 31,
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "developers.google.com/google-ads",
+  "what": "Create and manage ads that reach users on Google Search, Display, YouTube and more.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.google.com/google-ads",
+   "auth_methods": "https://developers.google.com/identity/protocols/oauth2",
+   "access": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+   "api_type": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+   "api_breadth": "https://developers.google.com/google-ads",
+   "mcp": "https://developers.google.com/ads/blog/posts/2025/10/open-source-google-ads-api-mcp-server",
+   "buildable": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: evidence URL fixed from malformed/invalid URL to https://developers.google.com/identity/protocols/oauth2 (valid page confirming OAuth2)"
+  ]
+ },
+ {
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "developers.facebook.com/docs/marketing-apis",
+  "what": "Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.facebook.com/docs/marketing-apis",
+   "auth_methods": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+   "access": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+   "api_type": "https://developers.facebook.com/docs/marketing-apis",
+   "api_breadth": "https://developers.facebook.com/docs/marketing-apis",
+   "mcp": "https://www.facebook.com/business/tools/ads-mcp-server",
+   "buildable": "https://developers.facebook.com/docs/marketing-apis",
+   "blocker": "https://developers.facebook.com/docs/marketing-apis"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "learn.microsoft.com/linkedin/marketing",
+  "what": "APIs to create and manage LinkedIn marketing campaigns, reporting, leads, and pages",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://learn.microsoft.com/linkedin/marketing",
+   "auth_methods": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10",
+   "access": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-10",
+   "api_type": "https://learn.microsoft.com/linkedin/marketing",
+   "api_breadth": "https://learn.microsoft.com/linkedin/marketing",
+   "mcp": "https://github.com/danielpopamd/linkedin-ads-mcp",
+   "buildable": "https://learn.microsoft.com/linkedin/marketing"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "highlevel.stoplight.io",
+  "what": "GoHighLevel API is a REST API that provides programmatic access to the HighLevel platform for custom integrations, third‑party app development, and workflow automation beyond the visual builder.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "auth_methods": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "access": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "api_type": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "api_breadth": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+   "mcp": "https://github.com/drausal/gohighlevel-mcp",
+   "buildable": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['OAuth2', 'API key'] -> ['OAuth2', 'Bearer/PAT token'] (vendor docs specify Private Integration Tokens/OAuth 2.0; PIT is a bearer token, not generic API key)",
+   "evidence.category_line: https://ghldesk.com/gohighlevel-api -> https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation (use vendor's own docs)",
+   "evidence.auth_methods: https://ghldesk.com/gohighlevel-api -> https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation (use vendor's own docs)",
+   "evidence.api_type: https://ghldesk.com/gohighlevel-api -> https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation (use vendor's own docs)",
+   "evidence.api_breadth: https://ghldesk.com/gohighlevel-api -> https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation (use vendor's own docs)",
+   "evidence.buildable: https://ghldesk.com/gohighlevel-api -> https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation (use vendor's own docs)"
+  ]
+ },
+ {
+  "id": 35,
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "mailchimp.com/developer",
+  "what": "Mailchimp’s developer tools provide everything you need to integrate your data with intelligent marketing tools and event-driven transactional email and SMS.",
+  "auth": [
+   "OAuth2",
+   "API key",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://mailchimp.com/developer",
+   "auth_methods": "https://mailchimp.com/developer/marketing/api/lists/list",
+   "access": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+   "api_type": "https://mailchimp.com/developer/marketing/api/lists/list",
+   "api_breadth": "https://mailchimp.com/developer",
+   "mcp": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+   "buildable": "https://mailchimp.com/developer"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 36,
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "developers.klaviyo.com",
+  "what": "Build your customer growth engine with agents",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.klaviyo.com",
+   "auth_methods": "https://developers.klaviyo.com/en/docs/authenticate_",
+   "access": "https://developers.klaviyo.com",
+   "api_type": "https://developers.klaviyo.com/en/docs/authenticate_",
+   "api_breadth": "https://developers.klaviyo.com",
+   "mcp": "https://developers.klaviyo.com",
+   "buildable": "https://developers.klaviyo.com",
+   "confidence": "https://developers.klaviyo.com"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "systeme.io (funnel builder)",
+  "what": "The only tool you need to launch your online business",
+  "auth": [
+   "API key"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://systeme.io/mcp",
+   "auth_methods": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "access": "https://systeme.io/mcp",
+   "api_type": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "api_breadth": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+   "mcp": "https://systeme.io/mcp",
+   "buildable": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: evidence updated from mcpservers.org to systeme.io/mcp (vendor's own page confirms 'Start for free now' and 'Free Included')"
+  ]
+ },
+ {
+  "id": 38,
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "developers.pinterest.com",
+  "what": "One API to seamlessly integrate with Pinterest: plan content, manage ads, upload product feeds, and more.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.pinterest.com",
+   "auth_methods": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "access": "https://developers.pinterest.com/docs/key-concepts/access-tiers",
+   "api_type": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization",
+   "api_breadth": "https://developers.pinterest.com",
+   "mcp": "https://developers.pinterest.com/about-pinterest-mcp/",
+   "buildable": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: community -> official (Vendor's own developer site at developers.pinterest.com/about-pinterest-mcp/ explicitly announces and documents the Pinterest MCP Server)",
+   "auth_methods: ['OAuth2', 'Basic', 'Bearer/PAT token'] -> ['OAuth2'] (Docs explicitly describe OAuth2 for authentication; 'Basic' and 'Bearer/PAT token' were not explicitly described as distinct auth methods in the provided text, only OAuth2 flows and access tokens are detailed)"
+  ]
+ },
+ {
+  "id": 39,
+  "app": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "developers.facebook.com/docs/threads",
+  "what": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "none found",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.facebook.com/documentation/threads/reference",
+   "auth_methods": "https://developers.facebook.com/documentation/threads/get-started",
+   "access": "https://developers.facebook.com/documentation/threads/get-started",
+   "api_type": "https://developers.facebook.com/documentation/threads/reference",
+   "api_breadth": "https://developers.facebook.com/documentation/threads/reference",
+   "mcp": "https://developers.facebook.com/documentation/mcp/",
+   "buildable": "https://developers.facebook.com/documentation/threads/reference"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: community -> none found (The vendor's official MCP documentation page lists servers for Ads, Social Technologies, and WhatsApp, but does not list a Threads MCP server. The previous 'community' citation was a third-party repo, not an official vendor offering.)",
+   "evidence.category_line: https://developers.facebook.com/docs/threads -> https://developers.facebook.com/documentation/threads/reference (Updated to a URL from the provided fresh pages that describes the API capabilities)",
+   "evidence.api_type: https://developers.facebook.com/documentation/threads/reference -> https://developers.facebook.com/documentation/threads/reference (Confirmed valid URL from fresh pages)",
+   "evidence.api_breadth: https://developers.facebook.com/docs/threads -> https://developers.facebook.com/documentation/threads/reference (Updated to a URL from the provided fresh pages that lists the endpoints)",
+   "evidence.buildable: https://developers.facebook.com/docs/threads -> https://developers.facebook.com/documentation/threads/reference (Updated to a URL from the provided fresh pages)"
+  ]
+ },
+ {
+  "id": 40,
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "hint": "sendgrid.com",
+  "what": "Cloud-based email delivery platform providing transactional and marketing email at scale",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://apis.io/providers/sendgrid",
+   "auth_methods": "https://support.sendgrid.com/hc/en-us/articles/18322114821403-Troubleshooting-Common-SendGrid-Web-API-Response-Errors-Codes",
+   "access": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts",
+   "api_type": "https://apis.io/providers/sendgrid",
+   "api_breadth": "https://apis.io/providers/sendgrid",
+   "mcp": "https://github.com/deyikong/sendgrid-mcp",
+   "buildable": "https://apis.io/providers/sendgrid"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: evidence updated from apis.io to support.sendgrid.com (vendor docs confirming API Key/Bearer auth)"
+  ]
+ },
+ {
+  "id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "hint": "shopify.dev",
+  "what": "Platform to build apps, storefronts, and agentic shopping experiences for ecommerce.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://shopify.dev",
+   "auth_methods": "https://shopify.dev/docs/api/usage/authentication",
+   "access": "https://shopify.dev/docs/apps/build/authentication-authorization/legacy/admin-custom-apps",
+   "api_type": "https://shopify.dev/docs/api/usage/authentication",
+   "api_breadth": "https://shopify.dev/docs/api/usage/authentication",
+   "mcp": "https://shopify.dev/changelog/posts/mcp-server-for-the-shopify-dev-assistant",
+   "buildable": "https://shopify.dev"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "hint": "woocommerce.com/document/woocommerce-rest-api",
+  "what": "The WooCommerce REST API connects your store to external systems and services.",
+  "auth": [
+   "API key",
+   "Basic"
+  ],
+  "access": "open-source/self-host",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://woocommerce.com/document/woocommerce-rest-api",
+   "auth_methods": "https://woocommerce.com/document/multi-location-inventory-management/rest-api",
+   "access": "https://woocommerce.com/document/woocommerce-rest-api",
+   "api_type": "https://woocommerce.com/document/woocommerce-rest-api",
+   "api_breadth": "https://woocommerce.com/document/woocommerce-rest-api",
+   "mcp": "https://developer.woocommerce.com/docs/features/mcp/",
+   "buildable": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: community -> official (Vendor docs at developer.woocommerce.com explicitly describe the official MCP integration via the MCP Adapter plugin and WooCommerce AI MCP server)",
+   "evidence.api_breadth: https://github.com/Hegetiby/woocommerce-mcp -> https://woocommerce.com/document/woocommerce-rest-api (Using vendor documentation for API breadth instead of a third-party MCP repo)"
+  ]
+ },
+ {
+  "id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "hint": "developer.bigcommerce.com",
+  "what": "Build, customize, and scale on the BigCommerce platform with storefronts, apps, and store data management.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token",
+   "JWT/signed"
+  ],
+  "access": "self-serve trial",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+   "auth_methods": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+   "access": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+   "api_type": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+   "api_breadth": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+   "mcp": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+   "buildable": "https://docs.bigcommerce.com/developer/docs/overview/quick-start"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['OAuth2', 'Bearer/PAT token', 'JWT/signed'] -> ['OAuth2', 'Bearer/PAT token', 'JWT/signed'] (Evidence URL updated to api-accounts page which explicitly mentions OAuth, access tokens, and JWTs)",
+   "evidence.auth_methods: https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview -> https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts (Previous URL did not mention OAuth2 or JWT, new URL does)",
+   "evidence.category_line: https://developer.bigcommerce.com -> https://docs.bigcommerce.com/developer/docs/overview/quick-start (Using provided page with explicit category description)",
+   "evidence.api_type: https://developer.bigcommerce.com -> https://docs.bigcommerce.com/developer/api-reference/about-our-apis (Using provided page listing REST and GraphQL APIs)",
+   "evidence.buildable: https://developer.bigcommerce.com -> https://docs.bigcommerce.com/developer/docs/overview/quick-start (Using provided page showing quick start steps)"
+  ]
+ },
+ {
+  "id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "hint": "developer.salesforce.com/docs/commerce",
+  "what": "Develop personalized ecommerce experiences with fast, flexible solutions.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.salesforce.com/docs/commerce",
+   "auth_methods": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "access": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/developer-workflow.html",
+   "api_type": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "api_breadth": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+   "mcp": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+   "buildable": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "hint": "developer.adobe.com/commerce",
+  "what": "Ecommerce platform for B2B and B2C",
+  "auth": [
+   "OAuth1.0a",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.adobe.com/commerce",
+   "auth_methods": "https://developer.adobe.com/commerce/webapi/rest",
+   "access": "https://developer.adobe.com/commerce/marketplace/guides/eqp/v1/access-keys",
+   "api_type": "https://developer.adobe.com/commerce/webapi/rest",
+   "api_breadth": "https://developer.adobe.com/commerce/webapi/rest",
+   "mcp": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+   "buildable": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "hint": "developers.squarespace.com",
+  "what": "Ecommerce platform with APIs for orders, inventory, and domain reselling",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "partial",
+  "blocker": "API access requires OAuth client registration and review/approval by Squarespace",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.squarespace.com",
+   "auth_methods": "https://developers.squarespace.com/commerce-apis/oauth",
+   "access": "https://developers.squarespace.com/commerce-apis/oauth",
+   "api_type": "https://developers.squarespace.com/commerce-apis/making-requests",
+   "api_breadth": "https://developers.squarespace.com/commerce-apis/making-requests",
+   "mcp": "https://developers.squarespace.com/mcp/overview",
+   "buildable": "https://developers.squarespace.com/commerce-apis/oauth",
+   "blocker": "https://developers.squarespace.com/commerce-apis/oauth"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: paid plan -> admin/app approval (OAuth docs state client registration requires review and approval by Squarespace)",
+   "buildable: yes -> partial (API access is gated behind client registration and approval)",
+   "blocker: -> API access requires OAuth client registration and review/approval by Squarespace (added due to approval gate)",
+   "auth_methods: [OAuth2, Bearer/PAT token] -> [OAuth2] (Docs explicitly describe OAuth 2.0; no explicit mention of standalone PAT/Bearer for API auth in provided pages)"
+  ]
+ },
+ {
+  "id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "hint": "api-docs.ecwid.com",
+  "what": "Ecommerce platform for online stores",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "community",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://www.ecwid.com/",
+   "auth_methods": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "access": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+   "api_type": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "api_breadth": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+   "mcp": "https://github.com/pranciskus/awesome-mcp-servers-6/blob/master/details/ecwid-mcp-server.md",
+   "buildable": "https://docs.ecwid.com/get-started/make-your-first-api-request"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: community -> community (confirmed: vendor docs mention an MCP server for reading docs, but no official MCP server for the Ecwid API itself; third-party servers like Pipedream exist)"
+  ]
+ },
+ {
+  "id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "hint": "gumroad.com/api",
+  "what": "Sell digital products",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://gumroad.com/claude",
+   "auth_methods": "https://gumroad.com/help/article/280-create-application-api",
+   "access": "https://gumroad.com/help/article/280-create-application-api",
+   "api_type": "https://rollout.com/integration-guides/gumroad/api-essentials",
+   "api_breadth": "https://gumroad.com/api",
+   "mcp": "https://gumroad.com/mcp",
+   "buildable": "https://gumroad.com/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "evidence.api_breadth: https://nocodeapi.com/docs/gumroad-api -> https://gumroad.com/api (Use official vendor documentation to support API breadth)",
+   "evidence.buildable: https://rollout.com/integration-guides/gumroad/api-essentials -> https://gumroad.com/api (Use official vendor documentation to support buildability)"
+  ]
+ },
+ {
+  "id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "hint": "developer-docs.amazon.com/sp-api",
+  "what": "REST-based API that helps Amazon sellers and vendors programmatically access their data for orders, shipments, payments, and more.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://sell.amazon.com/developers",
+   "auth_methods": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+   "access": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+   "api_type": "https://sell.amazon.com/developers",
+   "api_breadth": "https://sell.amazon.com/developers",
+   "mcp": "https://github.com/amzn/selling-partner-api-samples",
+   "buildable": "https://sell.amazon.com/developers"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "auth_methods: ['OAuth2', 'Bearer/PAT token'] -> ['OAuth2'] (Docs describe LWA/OAuth2 flow, not PATs)",
+   "access: self-serve free -> paid plan (Requires Professional selling account, which is paid)",
+   "mcp: official -> none found (Cited MCP server was for AWS Partner Central, not SP-API)",
+   "evidence: Updated URLs to reflect corrected fields",
+   "audit: Amazon publishes an official SP-API MCP in its amzn GitHub org; SP-API access requires developer registration/approval rather than just a paid plan."
+  ]
+ },
+ {
+  "id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "hint": "fanbasis.com",
+  "what": "One place to create, sell, and get paid, with payments built in.",
+  "auth": [
+   "API key"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "none found",
+  "buildable": "partial",
+  "blocker": "API documentation requires sign-in/approval to access",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://fanbasis.com",
+   "auth_methods": "https://github.com/FanBasis/fbnewapi",
+   "access": "https://dev-docs.fanbasis.com/",
+   "api_type": "https://github.com/FanBasis/fbnewapi",
+   "api_breadth": "https://github.com/FanBasis/fbnewapi",
+   "mcp": "https://github.com/FanBasis/fbnewapi",
+   "buildable": "https://dev-docs.fanbasis.com/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "category_line: Create, sell, and get paid with built‑in payments for creators and communities. -> One place to create, sell, and get paid, with payments built in. (Updated to match current official site text)",
+   "auth_methods: evidence URL changed from emergent.sh to github.com/FanBasis/fbnewapi (Vendor's own repo explicitly mentions authentication)",
+   "access: unclear -> admin/app approval (dev-docs.fanbasis.com requires sign-in to access API docs)",
+   "api_type: evidence URL changed from npmjs.com to github.com/FanBasis/fbnewapi (Vendor's own repo)",
+   "api_breadth: evidence URL changed from emergent.sh to github.com/FanBasis/fbnewapi (Vendor's own repo mentions endpoint references and webhook catalog)",
+   "mcp: official -> none found (Zapier MCP link was 404 and not vendor-official; no MCP server found in vendor's GitHub or docs)",
+   "buildable: yes -> partial (API docs are gated behind sign-in/approval)",
+   "blocker: '' -> API documentation requires sign-in/approval to access"
+  ]
+ },
+ {
+  "id": 51,
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "hint": "docs.dataforseo.com",
+  "what": "SEO data API",
+  "auth": [
+   "Basic"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.dataforseo.com",
+   "auth_methods": "https://docs.dataforseo.com/v3/auth",
+   "access": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+   "api_type": "https://docs.dataforseo.com",
+   "api_breadth": "https://docs.dataforseo.com",
+   "mcp": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+   "buildable": "https://docs.dataforseo.com"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 52,
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "hint": "seranking.com/api",
+  "what": "SEO & AEO Data at Scale",
+  "auth": [
+   "API key"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://seranking.com/api.html",
+   "auth_methods": "https://seranking.com/api/data/getting-started/",
+   "access": "https://seranking.com/api-pricing.html",
+   "api_type": "https://seranking.com/api/data/getting-started/",
+   "api_breadth": "https://seranking.com/api/how-to-get-api/",
+   "mcp": "https://seranking.com/api/mcp",
+   "buildable": "https://seranking.com/api.html"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: Bearer/PAT token -> API key (Docs explicitly state 'Authentication is identical... you can send the key in an Authorization header' and 'Generate a key', identifying it as an API key rather than a generic bearer token)",
+   "access: evidence updated to https://seranking.com/api-pricing.html (Explicitly mentions '14-day free trial gives you 100K API credits', confirming self-serve trial access)"
+  ]
+ },
+ {
+  "id": 53,
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "hint": "ahrefs.com/api",
+  "what": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://ahrefs.com/api",
+   "auth_methods": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+   "access": "https://docs.ahrefs.com/en/api/reference/public/get-domain-rating-free",
+   "api_type": "https://ahrefs.com/api",
+   "api_breadth": "https://ahrefs.com/api",
+   "mcp": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+   "buildable": "https://ahrefs.com/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "hint": "docs.mrscraper.com",
+  "what": "All-in-one guide to understanding, configuring, and using the MrScraper platform, from your first scrape to AI agents, integrations, and APIs.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.mrscraper.com",
+   "auth_methods": "https://docs.mrscraper.com/docs/api/authentication",
+   "access": "https://mrscraper.com/pricing",
+   "api_type": "https://docs.mrscraper.com/docs/api/overview",
+   "api_breadth": "https://docs.mrscraper.com",
+   "mcp": "https://github.com/mrscraper-com/mrscraper-mcp",
+   "buildable": "https://docs.mrscraper.com"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 55,
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "hint": "docs.apify.com",
+  "what": "Apify is all about Actors—a new way to package your code to make it easy to share, integrate, and build upon.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.apify.com",
+   "auth_methods": "https://docs.apify.com/integrations/api",
+   "access": "https://apify.com/pricing",
+   "api_type": "https://docs.apify.com/api/v2",
+   "api_breadth": "https://docs.apify.com/api/v2",
+   "mcp": "https://apify.com/mcp",
+   "buildable": "https://docs.apify.com/integrations/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: official -> official (evidence updated from third-party mcp.so to vendor's official page https://apify.com/mcp)"
+  ]
+ },
+ {
+  "id": 56,
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "hint": "firecrawl.dev",
+  "what": "Connect AI agents to the web for search, scrape, and interaction",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://firecrawl.dev",
+   "auth_methods": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "access": "https://www.firecrawl.dev/pricing",
+   "api_type": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "api_breadth": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+   "mcp": "https://www.firecrawl.dev/use-cases/ai-mcps",
+   "buildable": "https://docs.firecrawl.dev/api-reference/v2-introduction"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 57,
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "hint": "brightdata.com",
+  "what": "Web Data Infrastructure for Humans & Agents",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://brightdata.com",
+   "auth_methods": "https://docs.brightdata.com/api-reference/authentication",
+   "access": "https://docs.brightdata.com/quickstart",
+   "api_type": "https://docs.brightdata.com/quickstart",
+   "api_breadth": "https://docs.brightdata.com/quickstart",
+   "mcp": "https://brightdata.com/pricing/mcp-server",
+   "buildable": "https://docs.brightdata.com/quickstart"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 58,
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "hint": "github.com/sherlock-project/sherlock",
+  "what": "Hunt down social media accounts by username across social networks",
+  "auth": [
+   "None"
+  ],
+  "access": "open-source/self-host",
+  "api": "SDK/CLI only",
+  "breadth": "none",
+  "mcp": "community",
+  "buildable": "partial",
+  "blocker": "No API, only CLI",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://github.com/sherlock-project/sherlock",
+   "auth_methods": "https://github.com/sherlock-project/sherlock",
+   "access": "https://github.com/sherlock-project/sherlock",
+   "api_type": "https://github.com/sherlock-project/sherlock",
+   "api_breadth": "https://github.com/sherlock-project/sherlock",
+   "mcp": "https://github.com/Burnsedia/sherlock-mcp",
+   "buildable": "https://github.com/sherlock-project/sherlock",
+   "blocker": "https://github.com/sherlock-project/sherlock",
+   "confidence": "https://github.com/sherlock-project/sherlock"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 59,
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "hint": "waterfall.io (contact/company intel)",
+  "what": "B2B data enrichment API for go-to-market workflows.",
+  "auth": [
+   "API key"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "none found",
+  "buildable": "partial",
+  "blocker": "requires approval to obtain an API key",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.waterfall.io/v1/faq",
+   "auth_methods": "https://docs.waterfall.io/v1/introduction",
+   "access": "https://waterfall.io",
+   "api_type": "https://docs.waterfall.io/v1/introduction",
+   "api_breadth": "https://docs.waterfall.io/v1/introduction",
+   "mcp": "https://waterfall.io",
+   "buildable": "https://waterfall.io",
+   "blocker": "https://waterfall.io"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: Bearer/PAT token -> API key (docs explicitly state 'Send your API key in the x-api-key header')"
+  ]
+ },
+ {
+  "id": 60,
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "hint": "clay.com",
+  "what": "Build systems to grow revenue",
+  "auth": [
+   "API key"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://clay.com",
+   "auth_methods": "https://developers.clay.com/public-api/authentication",
+   "access": "https://www.clay.com/guides/clay-mcp",
+   "api_type": "https://university.clay.com/docs/http-api-integration-overview",
+   "api_breadth": "https://university.clay.com/docs/http-api-integration-overview",
+   "mcp": "https://www.clay.com/guides/clay-mcp",
+   "buildable": "https://developers.clay.com/quickstart"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['API key', 'Bearer/PAT token'] -> ['API key'] (The official developer docs at developers.clay.com explicitly state 'Authenticate requests with a Clay API key' and show the 'clay-api-key' header. The JWT page refers to authenticating *outbound* calls from Clay to other providers, not authenticating *to* Clay's API.)",
+   "access: 'self-serve free' -> 'self-serve trial' (The provided pages do not confirm a free tier with API access. The Clay MCP guide page explicitly shows a 'Start free trial' button, and the FAQ mentions paying with 'Clay credits', implying a paid/trial model rather than a free self-serve API.)",
+   "evidence.access: 'https://clay.com/faq/...' -> 'https://www.clay.com/guides/clay-mcp' (The previous evidence URL was flagged as not seen by the agent in the context of the failed check, but more importantly, the MCP guide page provides direct evidence of the 'Start free trial' access model.)",
+   "evidence.buildable: 'https://university.clay.com/...' -> 'https://developers.clay.com/quickstart' (The Quickstart page is the most direct evidence that a developer can build with Clay today.)"
+  ]
+ },
+ {
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "docs.github.com/rest",
+  "what": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.github.com/rest",
+   "auth_methods": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "access": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+   "api_type": "https://docs.github.com/rest",
+   "api_breadth": "https://docs.github.com/rest",
+   "mcp": "https://github.com/github/github-mcp-server",
+   "buildable": "https://github.com/pohi99999/github-mcp-server"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "audit: Evidence pointed at a personal fork; official server lives in the github org."
+  ]
+ },
+ {
+  "id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "vercel.com/docs/rest-api",
+  "what": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://vercel.com/docs/rest-api",
+   "auth_methods": "https://vercel.com/docs/cli/api",
+   "access": "https://vercel.com/pricing",
+   "api_type": "https://vercel.com/docs/rest-api",
+   "api_breadth": "https://vercel.com/docs/rest-api",
+   "mcp": "https://vercel.com/docs/mcp",
+   "buildable": "https://vercel.com/docs/rest-api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "evidence.auth_methods: https://vercel.com/docs/rest-api -> https://vercel.com/docs/cli/api (The REST API reference page snippet did not explicitly mention the auth token type, but the CLI API page describes making authenticated requests using the CLI session/token)"
+  ]
+ },
+ {
+  "id": 63,
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "docs.netlify.com/api",
+  "what": "Manage web deployments, forms, DNS, and site resources via REST API",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.netlify.com/api",
+   "auth_methods": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+   "access": "https://www.netlify.com/pricing",
+   "api_type": "https://docs.netlify.com/api",
+   "api_breadth": "https://docs.netlify.com/api",
+   "mcp": "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development",
+   "buildable": "https://docs.netlify.com/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 64,
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "developers.cloudflare.com/api",
+  "what": "Cloudflare API Reference",
+  "auth": [
+   "Bearer/PAT token",
+   "API key"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.cloudflare.com/api",
+   "auth_methods": "https://developers.cloudflare.com/videos/create-api-tokens",
+   "access": "https://developers.cloudflare.com/fundamentals/api/get-started/keys",
+   "api_type": "https://developers.cloudflare.com/api",
+   "api_breadth": "https://developers.cloudflare.com/api",
+   "mcp": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals",
+   "buildable": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "supabase.com/docs",
+  "what": "Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more.",
+  "auth": [
+   "API key",
+   "Bearer/PAT token",
+   "JWT/signed"
+  ],
+  "access": "self-serve free",
+  "api": "REST+GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://supabase.com/docs",
+   "auth_methods": "https://supabase.com/docs/guides/getting-started/api-keys",
+   "access": "https://supabase.com/pricing",
+   "api_type": "https://supabase.com/docs/reference/api/introduction",
+   "api_breadth": "https://supabase.com/docs/reference/api/introduction",
+   "mcp": "https://supabase.com/docs/guides/ai-tools/mcp",
+   "buildable": "https://supabase.com/docs/guides/ai-tools/mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "neo4j.com/docs/api",
+  "what": "Graph database platform",
+  "auth": [
+   "Basic",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://neo4j.com/docs/api",
+   "auth_methods": "https://neo4j.com/docs/api/python-driver/current/api.html",
+   "access": "https://community.neo4j.com/t/i-am-using-the-free-instance-of-the-neo4j-aura-console-for-me-the-create-api-key-option-is-not-enabled-so-how-can-i-get-the-api-key-of-the-neo4j-to-use-it-through-the-net/72068",
+   "api_type": "https://neo4j.com/docs/http-api/current/query",
+   "api_breadth": "https://neo4j.com/docs/http-api/current/query",
+   "mcp": "https://github.com/neo4j/mcp",
+   "buildable": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "docs.snowflake.com",
+  "what": "Cloud data platform for data warehousing and analytics",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token",
+   "JWT/signed"
+  ],
+  "access": "self-serve trial",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.snowflake.com",
+   "auth_methods": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "access": "https://www.snowflake.com/en/pricing-options",
+   "api_type": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "api_breadth": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+   "mcp": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server",
+   "buildable": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "mongodb.com/docs/atlas/api",
+  "what": "Programmatic access to MongoDB Atlas",
+  "auth": [
+   "OAuth2",
+   "API key"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://mongodb.com/docs/atlas/api",
+   "auth_methods": "https://www.mongodb.com/docs/atlas/api/api-authentication",
+   "access": "https://www.mongodb.com/pricing",
+   "api_type": "https://mongodb.com/docs/atlas/api",
+   "api_breadth": "https://mongodb.com/docs/atlas/api",
+   "mcp": "https://www.mongodb.com/docs/mcp-server/overview",
+   "buildable": "https://www.mongodb.com/docs/mcp-server/overview"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "docs.datadoghq.com/api",
+  "what": "Datadog API Reference For AI agents",
+  "auth": [
+   "API key",
+   "Other"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.datadoghq.com/api",
+   "auth_methods": "https://docs.datadoghq.com/api/latest/authentication",
+   "access": "https://docs.datadoghq.com/account_management/api-app-keys",
+   "api_type": "https://docs.datadoghq.com/api/latest",
+   "api_breadth": "https://docs.datadoghq.com/api/latest",
+   "mcp": "https://docs.datadoghq.com/mcp_server/setup",
+   "buildable": "https://docs.datadoghq.com/mcp_server/setup"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "hint": "docs.sentry.io/api",
+  "what": "Programmatic access to Sentry platform",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.sentry.io/api",
+   "auth_methods": "https://docs.sentry.io/api/auth",
+   "access": "https://sentry.io/pricing",
+   "api_type": "https://docs.sentry.io/api",
+   "api_breadth": "https://docs.sentry.io/api",
+   "mcp": "https://blog.sentry.io/yes-sentry-has-an-mcp-server-and-its-pretty-good",
+   "buildable": "https://docs.sentry.io/api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "hint": "developers.notion.com",
+  "what": "Notion API",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.notion.com/reference/authentication",
+   "auth_methods": "https://developers.notion.com/reference/authentication",
+   "access": "https://developers.notion.com/guides/authorization/overview",
+   "api_type": "https://developers.notion.com/reference/authentication",
+   "api_breadth": "https://developers.notion.com/guides/authorization/overview",
+   "mcp": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+   "buildable": "https://developers.notion.com/guides/mcp/get-started-with-mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "access: evidence updated from https://ivgraph.com/journal/notion-api-key to https://developers.notion.com/guides/authorization/overview (vendor docs confirm self-serve token creation)"
+  ]
+ },
+ {
+  "id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "hint": "airtable.com/developers",
+  "what": "Airtable is a cloud‑based spreadsheet‑database hybrid that lets you build and share apps.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://airtable.com/developers",
+   "auth_methods": "https://support.airtable.com/articles/2022585894-airtable-enterprise-api",
+   "access": "https://airtable.com/developers/web/api/billing-plans.md",
+   "api_type": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+   "api_breadth": "https://airtable.com/developers/web/api/billing-plans.md",
+   "mcp": "https://www.airtable.com/articles/mcp-server-interfaces-automations",
+   "buildable": "https://www.airtable.com/articles/mcp-server-interfaces-automations"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['Bearer/PAT token', 'OAuth2'] -> ['Bearer/PAT token'] (OAuth2 was not mentioned in the provided evidence pages; docs confirm token-based authentication)"
+  ]
+ },
+ {
+  "id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "hint": "developers.linear.app",
+  "what": "Linear is a productivity and project management platform.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.linear.app",
+   "auth_methods": "https://linear.app/developers/oauth-2-0-authentication",
+   "access": "https://linear.app/pricing",
+   "api_type": "https://developers.linear.app",
+   "api_breadth": "https://developers.linear.app",
+   "mcp": "https://linear.app/docs/mcp",
+   "buildable": "https://linear.app/docs/mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 74,
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "hint": "developer.atlassian.com",
+  "what": "Jira is a project management and issue tracking tool.",
+  "auth": [
+   "Basic",
+   "OAuth2",
+   "JWT/signed"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.atlassian.com",
+   "auth_methods": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+   "access": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account",
+   "api_type": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+   "api_breadth": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis",
+   "mcp": "https://support.atlassian.com/atlassian-ai-gateway/docs/use-atlassian-mcp-server",
+   "buildable": "https://support.atlassian.com/atlassian-ai-gateway/docs/use-atlassian-mcp-server"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "hint": "developers.asana.com",
+  "what": "Build for Clarity, Connectivity, and Collaboration",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.asana.com",
+   "auth_methods": "https://developers.asana.com/docs/quick-start",
+   "access": "https://forum.asana.com/t/premium-vs-business-account-and-api-access/170667",
+   "api_type": "https://developers.asana.com/docs/quick-start",
+   "api_breadth": "https://developers.asana.com/docs/quick-start",
+   "mcp": "https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server",
+   "buildable": "https://developers.asana.com/docs/quick-start"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "hint": "developer.monday.com",
+  "what": "AI work platform",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "GraphQL",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.monday.com",
+   "auth_methods": "https://developer.monday.com/apps/docs/choosing-auth",
+   "access": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+   "api_type": "https://developer.monday.com",
+   "api_breadth": "https://developer.monday.com",
+   "mcp": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+   "buildable": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "evidence.auth_methods: https://developer.monday.com/api-reference/docs/authentication -> https://developer.monday.com/apps/docs/choosing-auth (The previous evidence page only explicitly described personal tokens, whereas the new page explicitly lists 'Using an OAuth Access Token' as a method, satisfying the check for OAuth2 documentation.)"
+  ]
+ },
+ {
+  "id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "hint": "clickup.com/api",
+  "what": "Build integrations and apps with our Public API",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://clickup.com/api",
+   "auth_methods": "https://developer.clickup.com/docs/authentication",
+   "access": "https://developer.clickup.com/docs/Getting%20Started",
+   "api_type": "https://clickup.com/api",
+   "api_breadth": "https://clickup.com/api",
+   "mcp": "https://feedback.clickup.com/public-api/p/clickup-mcp-server-first-party-and-official",
+   "buildable": "https://feedback.clickup.com/public-api/p/clickup-mcp-server-first-party-and-official"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "hint": "coda.io/developers",
+  "what": "API for programmatically interacting with Superhuman Docs documents, tables, and more",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://coda.io/developers",
+   "auth_methods": "https://apis.io/providers/coda-project",
+   "access": "https://apis.io/providers/coda-project",
+   "api_type": "https://coda.io/developers",
+   "api_breadth": "https://coda.io/developers",
+   "mcp": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+   "buildable": "https://coda.io/resources/guides/getting_started_with_coda_mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: evidence updated to https://apis.io/providers/coda-project (explicitly mentions OAuth 2.0 and API Tokens)",
+   "access: evidence updated to https://apis.io/providers/coda-project (describes developer surface and API availability)"
+  ]
+ },
+ {
+  "id": 79,
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "hint": "smartsheet.com/developers",
+  "what": "Smartsheet Developers & API",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://smartsheet.com/developers",
+   "auth_methods": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "access": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "api_type": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "api_breadth": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+   "mcp": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+   "buildable": "https://smartsheet.com/developers",
+   "blocker": "https://smartsheet.com/developers"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "auth_methods: ['OAuth2'] -> ['API key', 'OAuth2'] (The authentication docs explicitly state 'The API authenticates using access tokens (API keys)' and the MCP install page mentions 'Smartsheet's OAuth' for specific clients.)"
+  ]
+ },
+ {
+  "id": 80,
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "hint": "help.getharvest.com/api-v2",
+  "what": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically. You can track time, log expenses, create projects, and more.",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+   "auth_methods": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+   "access": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+   "api_type": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+   "api_breadth": "https://help.getharvest.com/api-v2",
+   "mcp": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+   "buildable": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: none found -> official (Vendor's own help center documents the 'Harvest MCP' connection for AI assistants)"
+  ]
+ },
+ {
+  "id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "hint": "stripe.com/docs/api",
+  "what": "Stripe API Reference",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://stripe.com/docs/api",
+   "auth_methods": "https://docs.stripe.com/api/authentication",
+   "access": "https://docs.stripe.com/keys",
+   "api_type": "https://stripe.com/docs/api",
+   "api_breadth": "https://stripe.com/docs/api",
+   "mcp": "https://docs.stripe.com/mcp",
+   "buildable": "https://docs.stripe.com/mcp"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 82,
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "hint": "plaid.com/docs",
+  "what": "Bank-account connectivity API for transactions, balances, identity and payments.",
+  "auth": [
+   "API key"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://plaid.com/docs/api/",
+   "auth_methods": "https://plaid.com/docs/api/",
+   "access": "https://plaid.com/docs/quickstart/glossary/",
+   "api_type": "https://plaid.com/docs/api/",
+   "api_breadth": "https://plaid.com/docs/api/",
+   "mcp": "https://plaid.com/docs/resources/mcp/",
+   "buildable": "https://plaid.com/docs/api/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "hint": "binance-docs.github.io",
+  "what": "Cryptocurrency exchange platform for trading and managing digital assets.",
+  "auth": [
+   "API key",
+   "JWT/signed"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://www.binance.com/en/binance-api",
+   "auth_methods": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/request-security",
+   "access": "https://developers.binance.com/docs/binance-spot-api-docs",
+   "api_type": "https://developers.binance.com/docs/binance-spot-api-docs",
+   "api_breadth": "https://developers.binance.com/en/docs/",
+   "mcp": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+   "buildable": "https://github.com/qeinfinity/binance-mcp-server",
+   "blocker": "https://github.com/qeinfinity/binance-mcp-server"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "audit: Binance blocks automated fetches so pass 2 could not check it. Hand audit: requests are API key + HMAC/RSA/Ed25519 signed; Binance now hosts an official MCP server (pass 1 said community)."
+  ]
+ },
+ {
+  "id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "hint": "paygent (NMI-powered)",
+  "what": "White-label card payment gateway built on NMI's gateway platform.",
+  "auth": [
+   "API key"
+  ],
+  "access": "partner/sales gated",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "none found",
+  "buildable": "partial",
+  "blocker": "Needs a merchant gateway account issued through an NMI reseller; no public self-serve sandbox for 'Paygent Connect' itself was found.",
+  "confidence": "low",
+  "evidence": {
+   "category_line": "https://www.nmi.com/payment-gateway",
+   "auth_methods": "https://docs.nmi.com/reference/introduction",
+   "access": "https://docs.nmi.com/docs/getting-your-api-keys",
+   "api_type": "https://docs.nmi.com/reference/introduction",
+   "api_breadth": "https://docs.nmi.com/reference/introduction",
+   "buildable": "https://docs.nmi.com/reference/introduction",
+   "blocker": "https://docs.nmi.com/reference/introduction"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "category_line: White-label card payment gateway built on NMI's gateway platform. -> Paygent is a platform for building and managing AI agents... (The previous answer confused Paygent with NMI; fresh pages show Paygent is an AI agent platform at paygent.to)",
+   "auth_methods: ['API key'] -> ['Bearer/PAT token'] (Docs explicitly state 'Authentication: Bearer token in Authorization: Bearer pg_live_... header')",
+   "access: partner/sales gated -> self-serve free (Pricing page shows a $0/mo Free tier with 'Sign up free' and no credit card required)",
+   "api_breadth: broad -> moderate (Docs describe a 'small REST API' for managing plans, users, and subscriptions)",
+   "buildable: partial -> yes (Self-serve free tier with clear REST API and SDKs allows immediate development)",
+   "blocker: Needs a merchant gateway account... -> '' (No blocker for self-serve users)",
+   "confidence: low -> high (Fresh vendor docs clearly define the product, auth, and access)",
+   "audit: Verifier REGRESSION reverted: it matched paygent.to, an unrelated AI-agent cost-control tool (no NMI, no 'Connect'). The NMI-powered Paygent payment gateway is sold via a partner channel; NMI itself operates only through partners."
+  ]
+ },
+ {
+  "id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "hint": "ipayx.ai/docs",
+  "what": "FX audit layer that compares applied bank/card FX rates against mid-market and grades the spread.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "unclear",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "partial",
+  "blocker": "No public REST API reference on ipayx.ai/docs; the documented integration surface is the vendor's MCP server with a Bearer API key.",
+  "confidence": "low",
+  "evidence": {
+   "category_line": "https://ipayx.ai/docs",
+   "auth_methods": "https://mcpservers.org/servers/ipayx-technologies/mcp-fx-audit",
+   "access": "https://ipayx.ai/docs",
+   "api_type": "https://ipayx.ai/docs",
+   "api_breadth": "https://ipayx.ai/docs",
+   "mcp": "https://glama.ai/mcp/servers/j0a5aea03v",
+   "buildable": "https://ipayx.ai/docs",
+   "blocker": "https://ipayx.ai/docs"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "access: unclear -> self-serve free (MCP server docs state 'No signup required' and 'Free')",
+   "mcp: official -> official (evidence updated to vendor's own site https://www.ipayx.ai/mcp)",
+   "buildable: partial -> yes (REST API with Bearer auth and OpenAPI spec is available)",
+   "blocker: 'No public REST API reference...' -> '' (REST API reference exists at ipayx.ai/docs/api)",
+   "confidence: low -> high (vendor docs confirm REST API, auth, and MCP server)",
+   "audit: Verifier upgraded to free/yes/high from a third-party MCP listing only; vendor docs (ipayx.ai/docs) show no API reference or pricing terms. Kept the cautious pass-1 answer."
+  ]
+ },
+ {
+  "id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "hint": "developer.intuit.com",
+  "what": "Small-business accounting: invoices, bills, customers, ledgers.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "auth_methods": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "access": "https://developer.intuit.com/app/developer/qbo/docs/develop/sandboxes",
+   "api_type": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "api_breadth": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+   "mcp": "https://github.com/intuit/quickbooks-online-mcp-server",
+   "buildable": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "hint": "developer.xero.com",
+  "what": "Cloud accounting for small businesses: invoices, bank feeds, payroll.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "auth_methods": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "access": "https://developer.xero.com/documentation/getting-started-guide/",
+   "api_type": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "api_breadth": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+   "mcp": "https://github.com/XeroAPI/xero-mcp-server",
+   "buildable": "https://developer.xero.com/documentation/guides/oauth2/overview/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "hint": "developer.brex.com",
+  "what": "Corporate cards and spend management: expenses, budgets, transactions.",
+  "auth": [
+   "OAuth2",
+   "Bearer/PAT token"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developer.brex.com/docs/mcp",
+   "auth_methods": "https://developer.brex.com/docs/mcp",
+   "access": "https://developer.brex.com/docs/mcp",
+   "api_type": "https://developer.brex.com/docs/mcp",
+   "api_breadth": "https://developer.brex.com/docs/mcp",
+   "mcp": "https://developer.brex.com/docs/mcp",
+   "buildable": "https://developer.brex.com/docs/mcp"
+  },
+  "verified_by": "agent + verifier + audit",
+  "changes": [
+   "audit: Old auth evidence URL 404s; the MCP doc lists both OAuth and admin API tokens."
+  ]
+ },
+ {
+  "id": 89,
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "hint": "docs.ramp.com",
+  "what": "Corporate cards, expense management and accounts payable.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+   "auth_methods": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+   "access": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+   "api_type": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+   "api_breadth": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API",
+   "mcp": "https://agents.ramp.com/docs/mcp/setup",
+   "buildable": "https://support.ramp.com/hc/en-us/articles/46681939909907-Accessing-the-Developer-API"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "hint": "pitchbook.com (research API)",
+  "what": "Private-market data on companies, deals, investors and funds.",
+  "auth": [
+   "API key"
+  ],
+  "access": "partner/sales gated",
+  "api": "REST",
+  "breadth": "broad",
+  "mcp": "official",
+  "buildable": "partial",
+  "blocker": "API is a separate standalone contract with per-request credits; no self-serve key.",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://pitchbook.com/help/PitchBook-api",
+   "auth_methods": "https://pitchbook.com/help/PitchBook-api",
+   "access": "https://pitchbook.com/help/PitchBook-api",
+   "api_type": "https://pitchbook.com/help/PitchBook-api",
+   "api_breadth": "https://pitchbook.com/help/PitchBook-api",
+   "mcp": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "buildable": "https://pitchbook.com/help/PitchBook-api",
+   "blocker": "https://pitchbook.com/help/PitchBook-api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": [
+   "mcp: official -> official (evidence URL updated to https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector which explicitly mentions MCP server technology)"
+  ]
+ },
+ {
+  "id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "hint": "cloud.google.com/gemini (Enterprise API)",
+  "what": "AI research notebook that summarises and answers over your uploaded sources.",
+  "auth": [
+   "OAuth2"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "community",
+  "buildable": "partial",
+  "blocker": "Only NotebookLM Enterprise (Google Cloud project + licence) has an API, and it is v1alpha; consumer NotebookLM has none.",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "auth_methods": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "access": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+   "api_type": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "api_breadth": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "mcp": "https://github.com/PleasePrompto/notebooklm-mcp",
+   "buildable": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "blocker": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "hint": "help.otter.ai (MCP server)",
+  "what": "AI meeting notetaker and company-wide meeting knowledge base.",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "partner/sales gated",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "partial",
+  "blocker": "Public REST API is Enterprise-plan only (sales-led); the hosted MCP (OAuth) is the self-serve path.",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://otter.ai/api/docs/",
+   "auth_methods": "https://otter.ai/api/docs/",
+   "access": "https://www.businesswire.com/news/home/20251007385147/en",
+   "api_type": "https://otter.ai/api/docs/",
+   "api_breadth": "https://otter.ai/api/docs/",
+   "mcp": "https://mcp.otter.ai/mcp",
+   "buildable": "https://otter.ai/api/docs/",
+   "blocker": "https://otter.ai/api/docs/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "hint": "fathom.video",
+  "what": "AI meeting recorder that transcribes and summarises calls.",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://developers.fathom.ai/api-overview",
+   "auth_methods": "https://developers.fathom.ai/sdks/authentication",
+   "access": "https://developers.fathom.ai/api-overview",
+   "api_type": "https://developers.fathom.ai/api-overview",
+   "api_breadth": "https://developers.fathom.ai/api-overview",
+   "mcp": "https://developers.fathom.ai/mcp-docs",
+   "buildable": "https://developers.fathom.ai/api-overview"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "hint": "consensus.app (OAuth requested)",
+  "what": "AI search engine over peer-reviewed scientific papers.",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "admin/app approval",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "partial",
+  "blocker": "Search API key is granted only on application/approval and is rate-limited; MCP uses OAuth.",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://consensus.app/home/api/",
+   "auth_methods": "https://consensus.app/home/api/",
+   "access": "https://consensus.app/.well-known/pricing.md",
+   "api_type": "https://consensus.app/home/api/",
+   "api_breadth": "https://consensus.app/home/api/",
+   "mcp": "https://mcp.consensus.app/mcp",
+   "buildable": "https://consensus.app/home/api/",
+   "blocker": "https://consensus.app/home/api/"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "hint": "reducto.ai (document parsing)",
+  "what": "Document parsing/extraction API turning PDFs and scans into structured JSON.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://reducto.ai/SKILL.md",
+   "auth_methods": "https://reducto.ai/SKILL.md",
+   "access": "https://reducto.ai/about",
+   "api_type": "https://reducto.ai/SKILL.md",
+   "api_breadth": "https://reducto.ai/SKILL.md",
+   "mcp": "https://docs.reducto.ai/mcp-server",
+   "buildable": "https://reducto.ai/SKILL.md"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "hint": "docs.devin.ai (MCP)",
+  "what": "Autonomous AI software engineer that runs coding sessions.",
+  "auth": [
+   "Bearer/PAT token"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://docs.devin.ai/api-reference/authentication",
+   "auth_methods": "https://docs.devin.ai/api-reference/authentication",
+   "access": "https://docs.devin.ai/api-reference/authentication",
+   "api_type": "https://docs.devin.ai/api-reference/authentication",
+   "api_breadth": "https://docs.devin.ai/api-reference/authentication",
+   "mcp": "https://docs.devin.ai/work-with-devin/devin-mcp",
+   "buildable": "https://docs.devin.ai/api-reference/authentication"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "hint": "higgsfield.ai/cli (content suite)",
+  "what": "Generative AI image and video creation platform.",
+  "auth": [
+   "API key",
+   "OAuth2"
+  ],
+  "access": "paid plan",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+   "auth_methods": "https://www.scalekit.com/blog/higgsfield-mcp-vs-api",
+   "access": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-connect-higgsfield-to-ai-agent",
+   "api_type": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+   "api_breadth": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+   "mcp": "https://higgsfield.ai/cli",
+   "buildable": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "hint": "github.com/mermaid-js/mermaid-cli",
+  "what": "Command-line renderer that turns Mermaid text into SVG/PNG/PDF diagrams.",
+  "auth": [
+   "None"
+  ],
+  "access": "open-source/self-host",
+  "api": "SDK/CLI only",
+  "breadth": "none",
+  "mcp": "community",
+  "buildable": "partial",
+  "blocker": "No hosted API; a tool must wrap the local mmdc CLI (headless Chromium).",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://github.com/mermaid-js/mermaid-cli",
+   "auth_methods": "https://github.com/mermaid-js/mermaid-cli",
+   "access": "https://github.com/mermaid-js/mermaid-cli",
+   "api_type": "https://github.com/mermaid-js/mermaid-cli",
+   "api_breadth": "https://github.com/mermaid-js/mermaid-cli",
+   "mcp": "https://github.com/hustcc/mcp-mermaid",
+   "buildable": "https://github.com/mermaid-js/mermaid-cli",
+   "blocker": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "hint": "transcriptapi.com",
+  "what": "Hosted API for YouTube transcripts, search and channel/playlist data.",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "medium",
+  "evidence": {
+   "category_line": "https://transcriptapi.com",
+   "auth_methods": "https://transcriptapi.com",
+   "access": "https://transcriptapi.com",
+   "api_type": "https://transcriptapi.com",
+   "api_breadth": "https://transcriptapi.com",
+   "mcp": "https://github.com/ZeroPointRepo/youtube-mcp",
+   "buildable": "https://transcriptapi.com"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ },
+ {
+  "id": 100,
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "hint": "grain.com (meeting notes)",
+  "what": "AI meeting recorder and notes with clips and highlights.",
+  "auth": [
+   "Bearer/PAT token",
+   "OAuth2"
+  ],
+  "access": "self-serve free",
+  "api": "REST",
+  "breadth": "moderate",
+  "mcp": "official",
+  "buildable": "yes",
+  "blocker": "",
+  "confidence": "high",
+  "evidence": {
+   "category_line": "https://support.grain.com/en/articles/15507288-grain-api",
+   "auth_methods": "https://support.grain.com/en/articles/15507288-grain-api",
+   "access": "https://support.grain.com/en/articles/15507288-grain-api",
+   "api_type": "https://support.grain.com/en/articles/15507288-grain-api",
+   "api_breadth": "https://support.grain.com/en/articles/15507288-grain-api",
+   "mcp": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+   "buildable": "https://support.grain.com/en/articles/15507288-grain-api"
+  },
+  "verified_by": "agent + verifier",
+  "changes": []
+ }
+]

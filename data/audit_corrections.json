@@ -1,0 +1,165 @@
+{
+ "84": {
+  "set": {
+   "category_line": "White-label card payment gateway built on NMI's gateway platform.",
+   "auth_methods": [
+    "API key"
+   ],
+   "access": "partner/sales gated",
+   "api_type": "REST",
+   "api_breadth": "broad",
+   "mcp": "none found",
+   "buildable": "partial",
+   "blocker": "Needs a merchant gateway account issued through an NMI reseller; no public self-serve sandbox for 'Paygent Connect' itself was found.",
+   "confidence": "low"
+  },
+  "evidence": {
+   "category_line": "https://www.nmi.com/payment-gateway",
+   "auth_methods": "https://docs.nmi.com/reference/introduction",
+   "access": "https://docs.nmi.com/docs/getting-your-api-keys",
+   "api_type": "https://docs.nmi.com/reference/introduction",
+   "api_breadth": "https://docs.nmi.com/reference/introduction",
+   "mcp": "",
+   "buildable": "https://docs.nmi.com/reference/introduction",
+   "blocker": "https://docs.nmi.com/reference/introduction"
+  },
+  "why": "Verifier REGRESSION reverted: it matched paygent.to, an unrelated AI-agent cost-control tool (no NMI, no 'Connect'). The NMI-powered Paygent payment gateway is sold via a partner channel; NMI itself operates only through partners.",
+  "source": "https://www.nmi.com/resources/payments-101/faq/"
+ },
+ "85": {
+  "set": {
+   "category_line": "FX audit layer that compares applied bank/card FX rates against mid-market and grades the spread.",
+   "auth_methods": [
+    "Bearer/PAT token"
+   ],
+   "access": "unclear",
+   "api_type": "REST",
+   "api_breadth": "moderate",
+   "mcp": "official",
+   "buildable": "partial",
+   "blocker": "No public REST API reference on ipayx.ai/docs; the documented integration surface is the vendor's MCP server with a Bearer API key.",
+   "confidence": "low"
+  },
+  "evidence": {
+   "category_line": "https://ipayx.ai/docs",
+   "auth_methods": "https://mcpservers.org/servers/ipayx-technologies/mcp-fx-audit",
+   "access": "https://ipayx.ai/docs",
+   "api_type": "https://ipayx.ai/docs",
+   "api_breadth": "https://ipayx.ai/docs",
+   "mcp": "https://glama.ai/mcp/servers/j0a5aea03v",
+   "buildable": "https://ipayx.ai/docs",
+   "blocker": "https://ipayx.ai/docs"
+  },
+  "why": "Verifier upgraded to free/yes/high from a third-party MCP listing only; vendor docs (ipayx.ai/docs) show no API reference or pricing terms. Kept the cautious pass-1 answer.",
+  "source": "https://ipayx.ai/docs"
+ },
+ "83": {
+  "set": {
+   "auth_methods": [
+    "API key",
+    "JWT/signed"
+   ],
+   "mcp": "official"
+  },
+  "evidence": {
+   "auth_methods": "https://developers.binance.com/docs/binance-spot-api-docs/rest-api/request-security",
+   "access": "https://developers.binance.com/docs/binance-spot-api-docs",
+   "api_type": "https://developers.binance.com/docs/binance-spot-api-docs",
+   "mcp": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic"
+  },
+  "why": "Binance blocks automated fetches so pass 2 could not check it. Hand audit: requests are API key + HMAC/RSA/Ed25519 signed; Binance now hosts an official MCP server (pass 1 said community).",
+  "source": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic"
+ },
+ "49": {
+  "set": {
+   "mcp": "official",
+   "access": "admin/app approval"
+  },
+  "evidence": {
+   "mcp": "https://github.com/amzn/selling-partner-api-samples",
+   "auth_methods": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+   "access": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer"
+  },
+  "why": "Amazon publishes an official SP-API MCP in its amzn GitHub org; SP-API access requires developer registration/approval rather than just a paid plan.",
+  "source": "https://github.com/amzn/selling-partner-api-samples"
+ },
+ "9": {
+  "set": {
+   "auth_methods": [
+    "API key",
+    "OAuth2"
+   ]
+  },
+  "evidence": {
+   "auth_methods": "https://developer.copper.com/introduction/requests.html",
+   "access": "https://developer.copper.com/introduction/requests.html"
+  },
+  "why": "Copper keys go in a custom X-PW-AccessToken header (API key), not HTTP Basic; OAuth 2.0 exists for third-party apps.",
+  "source": "https://developer.copper.com/introduction/oauth/index.html"
+ },
+ "26": {
+  "set": {
+   "auth_methods": [
+    "OAuth2",
+    "Bearer/PAT token"
+   ]
+  },
+  "evidence": {
+   "auth_methods": "https://discord.com/developers/docs/reference#authentication"
+  },
+  "why": "Discord API calls use 'Bot <token>' or OAuth2 Bearer tokens; HTTP Basic is not an API auth method.",
+  "source": "https://discord.com/developers/docs/reference#authentication"
+ },
+ "5": {
+  "set": {},
+  "evidence": {
+   "mcp": "https://docs.twenty.com/developers/extend/mcp"
+  },
+  "why": "Official MCP confirmed in Twenty's own docs (evidence was just the homepage).",
+  "source": "https://docs.twenty.com/developers/extend/mcp"
+ },
+ "25": {
+  "set": {},
+  "evidence": {
+   "mcp": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+  },
+  "why": "Official MCP (mcp.pumble.com) confirmed on Pumble's help centre; previous evidence page was generic.",
+  "source": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+ },
+ "61": {
+  "set": {},
+  "evidence": {
+   "mcp": "https://github.com/github/github-mcp-server"
+  },
+  "why": "Evidence pointed at a personal fork; official server lives in the github org.",
+  "source": "https://github.com/github/github-mcp-server"
+ },
+ "6": {
+  "set": {
+   "confidence": "medium"
+  },
+  "evidence": {},
+  "why": "mcp.podio.com is on Podio's own domain and uses Podio OAuth, but the page does not name its operator; kept 'official' at medium confidence.",
+  "source": "https://mcp.podio.com/"
+ },
+ "27": {
+  "set": {
+   "auth_methods": [
+    "API key"
+   ]
+  },
+  "evidence": {
+   "auth_methods": "https://core.telegram.org/bots/api#authorizing-your-bot"
+  },
+  "why": "Telegram Bot API puts the bot token in the URL path (api.telegram.org/bot<token>/...), i.e. an API key, not a Bearer header.",
+  "source": "https://core.telegram.org/bots/api#authorizing-your-bot"
+ },
+ "88": {
+  "set": {},
+  "evidence": {
+   "auth_methods": "https://developer.brex.com/docs/mcp"
+  },
+  "why": "Old auth evidence URL 404s; the MCP doc lists both OAuth and admin API tokens.",
+  "source": "https://developer.brex.com/docs/mcp"
+ }
+}

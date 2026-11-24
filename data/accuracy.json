@@ -1,0 +1,80 @@
+{
+  "sample_size": 20,
+  "fields": [
+    "auth_methods",
+    "access",
+    "api_type",
+    "mcp",
+    "buildable"
+  ],
+  "per_field": {
+    "auth_methods": {
+      "pass1": 80.0,
+      "pass2": 85.0,
+      "final": 85.0
+    },
+    "access": {
+      "pass1": 90.0,
+      "pass2": 95.0,
+      "final": 95.0
+    },
+    "api_type": {
+      "pass1": 100.0,
+      "pass2": 100.0,
+      "final": 100.0
+    },
+    "mcp": {
+      "pass1": 85.0,
+      "pass2": 100.0,
+      "final": 100.0
+    },
+    "buildable": {
+      "pass1": 100.0,
+      "pass2": 100.0,
+      "final": 100.0
+    }
+  },
+  "overall": {
+    "pass1": 91.0,
+    "pass2": 96.0,
+    "final": 96.0
+  },
+  "misses": [
+    {
+      "app": "Threads (Meta)",
+      "field": "auth_methods",
+      "agent": [
+        "OAuth2",
+        "Bearer/PAT token"
+      ],
+      "truth": "OAuth2",
+      "note": "Threads user token comes from OAuth and is passed as access_token param, not a Bearer header"
+    },
+    {
+      "app": "Asana",
+      "field": "auth_methods",
+      "agent": [
+        "Bearer/PAT token"
+      ],
+      "truth": "OAuth2, Bearer/PAT token",
+      "note": "Asana supports OAuth apps as well as personal access tokens"
+    },
+    {
+      "app": "Coda",
+      "field": "auth_methods",
+      "agent": [
+        "OAuth2",
+        "Bearer/PAT token"
+      ],
+      "truth": "Bearer/PAT token",
+      "note": "Coda REST API is Bearer-token only; the OAuth is for the hosted MCP"
+    },
+    {
+      "app": "Google Ads",
+      "field": "access",
+      "agent": "self-serve free",
+      "truth": "admin/app approval",
+      "note": "Test access by default; Basic (production) needs brand verification + application (may be auto-approved). Rechecked by Lavanya"
+    }
+  ]
+}

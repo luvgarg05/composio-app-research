@@ -1,0 +1,27 @@
+{
+ "title": "Can Composio build a toolkit for these 100 apps? An agent researched them, then had to prove it.",
+ "headlines": [
+  "<b>88 of 100 apps are buildable today, and none are technically impossible.</b> The 12 \"partial\" apps are blocked by <i>commercial</i> gates (a sales contract, an admin approval, an enterprise plan), not by missing APIs. So the bottleneck for the long tail is partnerships and outreach, not engineering.",
+  "<b>MCP has become standard:</b> 86 of 100 vendors now publish an official MCP server. Coverage is no longer the question; what matters is whether the vendor's MCP covers the same surface as the API. Several (Coda, Otter, Higgsfield) use OAuth only on the MCP while the REST API uses a different credential.",
+  "<b>72% are self-serve for a developer</b> (free tier, free trial or open source). Gating clusters by category: <b>Developer/Infra has zero gated apps</b>, while <b>AI-native, Ecommerce and Finance</b> have the most approval, paid or sales-led access.",
+  "<b>Auth is a mix, not a standard:</b> 58% support OAuth2, 52% personal/Bearer tokens, 28% plain API keys, 14% HTTP Basic. Many apps offer two methods (OAuth for multi-tenant apps, a token for single-workspace use), so a toolkit usually needs both.",
+  "<b>Accuracy rose from 91% (agent alone) to 96% after the verification loop and audit</b>, measured field-by-field on a 20-app stratified sample. Auth method is the hardest field (85%); MCP was the biggest gain (85% → 100%)."
+ ],
+ "patterns_lead": "Patterns across all 100 apps. Each bar is counted from the table below, and every cell in that table links to its source.",
+ "heat_note": "Read across a row: green = a developer can start today, amber/red = someone has to approve or sell you access. Developer and productivity tools are almost all green; finance, AI-native and ecommerce carry most of the gates.",
+ "wins_note": "Self-serve, broad API, buildable now: the fastest toolkits to ship.",
+ "outreach_note": "Blocked by access, not technology: these need a partnership, an approval or a customer account. Each row says what blocks it.",
+ "does": [
+  "Reads the 100-app list (name, category, official docs hint) from the assignment.",
+  "<b>Pass 1, research:</b> for each app, runs targeted web searches through the <b>Composio SDK</b> (Tavily search tool via a Composio session), falling back to a free search backend when Composio credits ran out. It fetches the vendor's own pages and asks an LLM (Groq/Gemini, OpenAI-compatible) to fill a strict schema with <b>one evidence URL per field</b>.",
+  "<b>Pass 2, verification loop:</b> 7 automatic checks per row (evidence URL loads, is on the vendor's domain, mentions the claimed auth method and MCP, plus consistency rules such as 'sales-gated cannot be buildable=yes'). Failing rows are re-researched on the vendor's own domain by a critic model.",
+  "Writes machine-readable results (results.json / results.csv) and builds this page from them."
+ ],
+ "human": [
+  "Setup: API keys and accounts (Composio, Groq, Gemini). The agent never sees the keys.",
+  "Free-tier limits: the LLM and Composio quotas ran out mid-run, so the last 18 apps were researched by the Claude agent with web search under the same schema. Those rows are labelled in the data.",
+  "An <b>independent audit</b> of risky claims (12 corrections, each with a source). It caught a verifier <b>regression</b>: pass 2 confused 'Paygent Connect' (an NMI-powered payment gateway) with an unrelated AI-cost tool, and the audit reverted it.",
+  "Ground truth for accuracy: 20 apps re-checked against vendor docs, with judgement calls (e.g. HubSpot's developer API key only covers app settings, not CRM data) and spot checks by Lavanya."
+ ],
+ "ver_note": "Ground truth was re-checked against vendor docs by a separate review pass and spot-checked by a human (Lavanya). The 4 remaining misses are listed below exactly as measured; they were <b>not</b> retro-fitted into the score."
+}
