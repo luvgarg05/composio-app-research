@@ -6,7 +6,7 @@
 <title>100 apps, checked for agent-readiness — Lavanya Garg for Composio</title>
 <meta name="description" content="A research agent checked 100 apps for auth, developer access, API surface and MCP, with a source for every answer and measured accuracy.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wdth,wght@75..100,400..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Instrument+Sans:wdth,wght@75..100,400..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
 <style>
 :root{
@@ -187,7 +187,7 @@ footer{padding:var(--s7) 0 var(--s8);border-top:1px solid var(--line);font-size:
 /* ===== cream / brown / baby blue (client reference) ===== */
 :root{--bg:#F2E8DA;--deep:#EADCC8;--panel:#FBF6EE;--line:rgba(59,36,24,.13);--line2:rgba(59,36,24,.24);
  --text:#3B2418;--soft:#6E5546;--dim:#9A8473;--sky:#8EC5FF;--sage:#3d7fc4;--amber:#a8743c;--coral:#b4543a;
- --serif:'Instrument Serif',Georgia,serif}
+ --serif:'Fraunces',Georgia,serif}
 html,body{background:#F2E8DA;color:#3B2418}
 body:before{opacity:.5}
 section:nth-of-type(odd),.hero{background:none}
@@ -254,6 +254,60 @@ details{border-color:var(--line)}details .fx{border-color:var(--line);color:var(
 pre{background:#3B2418;color:#F2E8DA;border:0}pre .c{color:#b9a28c}
 footer{border-color:var(--line);color:var(--dim)}footer a{color:#2f6fae}
 :focus-visible{outline-color:#2f6fae}
+
+/* ===== weight + spacing + stepper (round 2) ===== */
+body{font-weight:450}
+h1,h2{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 96;letter-spacing:-.02em}
+h1 em,h2 em{font-weight:450}
+h3{font-weight:600}
+.lede{color:#5a4234;font-weight:450}
+.find p,.plain li,.steps p{color:#5a4234}
+.find p b,.plain li b,.headlines b,.lede b{font-weight:650;color:#3B2418}
+.byline b{font-weight:650}
+.find .k,.find .num,.climb .v,.statement .mo-lt__type{font-family:var(--serif);font-weight:500}
+.hero-links a{font-weight:550}
+.brow .meta{font-weight:500}
+th{font-weight:600}
+td .ap b{font-weight:650}
+.key li b,.peek dd{font-weight:600}
+/* board straight + centred */
+@keyframes floaty{from{transform:translateY(-8px)}to{transform:translateY(8px)}}
+.hero-grid{align-items:center}
+.board{justify-self:center;width:100%;max-width:600px}
+/* tighter rhythm */
+section{padding:88px 0}
+.statement{min-height:0;padding:96px 0}
+.statement>.wrap{width:100%}
+.fullscreen{min-height:0}
+.dist{margin-top:var(--s7)}
+.twocol{margin-top:var(--s7)}
+/* stepper */
+.stepper{margin-top:var(--s6)}
+.stepnav{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-bottom:var(--s5)}
+.stepnav:before{content:"";position:absolute;left:10%;right:10%;top:27px;height:2px;background:rgba(59,36,24,.14);border-radius:2px}
+.stepnav .prog{position:absolute;left:10%;top:27px;height:2px;background:#8EC5FF;border-radius:2px;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.sbtn{position:relative;background:none;border:0;padding:0 6px;cursor:pointer;font:inherit;color:#9A8473;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.sbtn .dot{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#FBF6EE;border:2px solid rgba(59,36,24,.18);font:600 19px var(--serif);color:#9A8473;transition:all .35s cubic-bezier(.2,.8,.2,1);position:relative;z-index:1}
+.sbtn .nm{font-weight:600;font-size:15.5px;transition:color .3s}
+.sbtn:hover .dot{border-color:#8EC5FF;transform:translateY(-2px)}
+.sbtn.done .dot{background:#3B2418;border-color:#3B2418;color:#F2E8DA}
+.sbtn.done .nm{color:#3B2418}
+.sbtn.on .dot{background:#8EC5FF;border-color:#8EC5FF;color:#23324a;transform:scale(1.12);box-shadow:0 0 0 8px rgba(142,197,255,.25)}
+.sbtn.on .nm{color:#3B2418}
+.stepbody{display:grid;grid-template-columns:48px 1fr 48px;gap:var(--s4);align-items:center}
+.sarrow{width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(59,36,24,.2);background:#FBF6EE;color:#3B2418;font:500 26px/1 var(--body);cursor:pointer;transition:background .2s,transform .2s}
+.sarrow:hover{background:#8EC5FF;border-color:#8EC5FF;transform:translateY(-2px)}
+.stepcard{background:#FBF6EE;border:1px solid rgba(59,36,24,.12);border-radius:20px;padding:32px 36px;min-height:290px;display:grid;grid-template-columns:1fr 1fr;gap:32px;box-shadow:0 30px 60px -44px rgba(59,36,24,.45)}
+.stepcard.swap{animation:swapin .45s cubic-bezier(.2,.8,.2,1)}
+@keyframes swapin{from{opacity:0;transform:translateX(16px)}}
+.stepcard .no{font:500 15px var(--body);color:#2f6fae;margin-bottom:6px}
+.stepcard h3{font-family:var(--serif);font-weight:500;font-size:34px;line-height:1.05;margin-bottom:12px}
+.stepcard p{color:#5a4234;font-size:16.5px;margin-bottom:10px}
+.stepcard ul{margin:0;padding-left:18px;color:#5a4234;font-size:15.5px}.stepcard li{margin:4px 0}
+.stepcard .ex{background:#3B2418;color:#F2E8DA;border-radius:14px;padding:18px 20px;font:400 12.5px/1.7 var(--mono);overflow:auto;white-space:pre-wrap;word-break:break-word;max-height:300px}
+.stepcard .ex b{color:#8EC5FF;font-weight:500}.stepcard .ex i{color:#c9b39c;font-style:normal}
+.stepcard .exl{font-size:13.5px;color:#9A8473;margin:0 0 8px;font-weight:500}
+@media(max-width:960px){.stepcard{grid-template-columns:1fr;padding:24px}.stepbody{grid-template-columns:1fr}.sarrow{display:none}.sbtn .nm{font-size:12.5px}.sbtn .dot{width:44px;height:44px}.stepnav:before,.stepnav .prog{top:21px}}
 </style>
 </head>
 <body>
@@ -313,13 +367,14 @@ footer{border-color:var(--line);color:var(--dim)}footer a{color:#2f6fae}
 <section id="agent"><div class="wrap">
  <h2 class="rv">How the agent works</h2>
  <p class="lede measure rv">A Python pipeline. Each stage writes its own file, so every answer can be traced back through the run.</p>
- <ol class="steps rv">
-  <li><h3>Search</h3><p>Composio's SDK runs targeted queries per app: auth, access and pricing, MCP.</p></li>
-  <li><h3>Read</h3><p>Fetches the vendor's own pages first and ranks official docs above everything else.</p></li>
-  <li><h3>Extract</h3><p>An LLM fills a strict schema with one evidence link per field.</p></li>
-  <li><h3>Verify</h3><p>Seven automatic checks per row. Failures are re-researched on the vendor's domain by a second model.</p></li>
-  <li><h3>Audit and score</h3><p>Risky claims are corrected with sources, then accuracy is measured on a sample.</p></li>
- </ol>
+ <div class="stepper rv" id="stepper">
+  <div class="stepnav" role="tablist" aria-label="Pipeline steps"></div>
+  <div class="stepbody">
+   <button class="sarrow" id="sprev" aria-label="Previous step">&#8249;</button>
+   <div class="stepcard" id="stepcard" aria-live="polite"></div>
+   <button class="sarrow" id="snext" aria-label="Next step">&#8250;</button>
+  </div>
+ </div>
  <div class="twocol rv">
   <div><h3>What the agent does on its own</h3><ul class="plain" id="does"></ul></div>
   <div><h3>Where a person had to step in</h3><ul class="plain" id="human"></ul></div>
@@ -425,6 +480,31 @@ function render(){const q=$("#q").value.toLowerCase(),c=$("#fcat").value,a=$("#f
 ["#q","#fcat","#facc","#fbuild"].forEach(s=>$(s).addEventListener("input",render));render();
 /* agent */
 const li=(el,arr)=>$(el).innerHTML=(arr||[]).map(x=>`<li>${x}</li>`).join("");li("#does",D.ins.does);li("#human",D.ins.human);
+/* ---- pipeline stepper ---- */
+(()=>{const r81=rows.find(r=>r.id===81)||rows[0],pd=rows.find(r=>r.app==="Pipedrive"),pg=rows.find(r=>r.id===84);
+const j=o=>JSON.stringify(o,null,1).replace(/"([a-z_]+)":/g,'<b>"$1"</b>:');
+const S=[
+ {n:"Search",t:"Ask the web the three questions that matter",p:"For every app the agent sends targeted searches through <b>Composio's SDK</b> (the TAVILY_SEARCH tool in a Composio session). When Composio's free credits ran out, a circuit breaker switched to a backup search and logged it on the row.",l:["How does it authenticate?","Can a developer get access, and what does it cost?","Is there an official MCP server?"],ex:"Example queries for "+r81.app,code:`<i># auth</i>\n"${r81.app} API authentication"\n<i># access</i>\n"${r81.app} API access developer account free plan pricing"\n<i># MCP</i>\n"${r81.app} official MCP server ${dom(r81)}"`},
+ {n:"Read",t:"Read the vendor's own pages first",p:"The official docs page from the brief is fetched first. Search results are ranked so the vendor's own domain beats blogs and directories, then about 3,000 characters of each page are kept as evidence.",l:["Official docs before third-party sites","One page per question","Every URL kept, so answers can cite it"],ex:"Sources the agent read for "+r81.app,code:Object.values(r81.evidence).filter((v,i,a)=>a.indexOf(v)===i).join("\n")},
+ {n:"Extract",t:"Fill a strict form, with a link for every field",p:"An LLM reads the evidence and fills a fixed schema. Every field must name the URL it came from, and the allowed values are fixed, so answers can be compared across all 100 apps.",l:["Auth methods, access, API type and breadth","MCP: official, community or none found","Buildable, plus the blocker if not"],ex:"The final row for "+r81.app,code:j({app:r81.app,auth_methods:r81.auth,access:r81.access,api_type:r81.api,mcp:r81.mcp,buildable:r81.buildable,evidence:{auth_methods:r81.evidence.auth_methods}})},
+ {n:"Verify",t:"Check every row, and re-research what fails",p:"Seven automatic checks run on every row. Rows that fail are searched again on the vendor's own domain, and a second model corrects them.",l:["Does each evidence link load, and is it the vendor's site?","Does the page really mention the claimed auth method and MCP?","Do the answers agree? Sales-gated can't be 'buildable: yes'"],ex:"A real correction it made"+(pd?" ("+pd.app+")":""),code:(pd&&pd.changes&&pd.changes.find(c=>c.startsWith("mcp")))||"mcp: community -> official"},
+ {n:"Audit and score",t:"Fix what's risky, then measure honestly",p:"An independent audit corrected 12 rows, each with a source. It also caught a mistake the verifier introduced (Paygent Connect confused with a different product). Then 20 random apps were checked field by field against vendor docs.",l:[`Accuracy: ${D.acc.overall?.pass1}% → ${D.acc.overall?.pass2}% → ${D.acc.overall?.final}%`,"Four remaining misses are listed below, not hidden","Every correction stored with its reason"],ex:"An audit correction"+(pg?" ("+pg.app+")":""),code:(pg&&pg.changes&&(pg.changes.find(c=>c.startsWith("audit"))||"").slice(0,420))||""}
+];
+const nav=$("#stepper .stepnav");nav.innerHTML=S.map((x,i)=>`<button class="sbtn" role="tab" data-i="${i}"><span class="dot">${i+1}</span><span class="nm">${x.n}</span></button>`).join("")+`<span class="prog"></span>`;
+const bt=[...nav.querySelectorAll(".sbtn")],card=$("#stepcard"),prog=nav.querySelector(".prog");let cur=0,auto=true,timer;
+const show=i=>{cur=(i+S.length)%S.length;const x=S[cur];
+ bt.forEach((b,k)=>{b.classList.toggle("on",k===cur);b.classList.toggle("done",k<cur);b.setAttribute("aria-selected",k===cur)});
+ prog.style.width=(80*cur/(S.length-1))+"%";
+ card.classList.remove("swap");void card.offsetWidth;card.classList.add("swap");
+ card.innerHTML=`<div><div class="no">Step ${cur+1} of ${S.length}</div><h3>${x.t}</h3><p>${x.p}</p><ul>${x.l.map(z=>`<li>${z}</li>`).join("")}</ul></div><div><p class="exl">${esc(x.ex)}</p><div class="ex">${x.code}</div></div>`};
+const stop=()=>{auto=false;clearInterval(timer)};
+bt.forEach(b=>b.addEventListener("click",()=>{stop();show(+b.dataset.i)}));
+$("#sprev").addEventListener("click",()=>{stop();show(cur-1)});$("#snext").addEventListener("click",()=>{stop();show(cur+1)});
+show(0);
+if(!reduce){const io2=new IntersectionObserver(es=>es.forEach(e=>{clearInterval(timer);if(e.isIntersecting&&auto)timer=setInterval(()=>show(cur+1),4200)}),{threshold:.4});io2.observe($("#stepper"))}
+})();
+
+
 /* verification */
 const A=D.acc||{},O=A.overall||{};
 $("#ver-lead").innerHTML=`We picked ${A.sample_size||20} apps at random, two from each category, and checked five answers for each against the vendor's own docs: 100 answers in all. ${D.ins.ver_note||""}`;
