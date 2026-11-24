@@ -308,6 +308,10 @@ section{padding:88px 0}
 .stepcard .ex b{color:#8EC5FF;font-weight:500}.stepcard .ex i{color:#c9b39c;font-style:normal}
 .stepcard .exl{font-size:13.5px;color:#9A8473;margin:0 0 8px;font-weight:500}
 @media(max-width:960px){.stepcard{grid-template-columns:1fr;padding:24px}.stepbody{grid-template-columns:1fr}.sarrow{display:none}.sbtn .nm{font-size:12.5px}.sbtn .dot{width:44px;height:44px}.stepnav:before,.stepnav .prog{top:21px}}
+
+/* stronger gated + partial markers */
+.t-gate{border:2px solid #b4543a!important;background:rgba(180,84,58,.30)!important}
+.tile.partial:after{width:13px;height:13px;top:-5px;right:-5px;background:#b4543a;border:2.5px solid #F2E8DA;box-shadow:0 1px 3px rgba(59,36,24,.35)}
 </style>
 </head>
 <body>
@@ -461,8 +465,8 @@ $("#finds").innerHTML=`<div class="find"><div class="k sky" data-count="${mcpN}"
 const cats=st.cats;
 $("#cats").innerHTML=cats.map(c=>{const rs=rows.filter(r=>r.category===c);const ok=rs.filter(r=>SELF.includes(r.access)).length;
  return `<div class="cat-row"><div class="cname">${esc(c)}<span>${ok} of ${rs.length} self-serve</span></div><div class="tiles">${rs.map(r=>`<button class="tile t-${accGroup(r.access)} ${r.buildable!=="yes"?"partial":""}" data-id="${r.id}" aria-label="${esc(r.app)}: ${esc(r.access)}, buildable ${esc(r.buildable)}">${img(r)}</button>`).join("")}</div></div>`}).join("");
-const G=[["self","Self-serve (free, trial or open source)","#8EC5FF","rgba(142,197,255,.28)"],["appr","Paid plan or needs approval","#d9b98f","rgba(229,201,163,.45)"],["gate","Sales-gated","#c4705a","rgba(227,165,143,.45)"],["unc","Unclear","rgba(59,36,24,.3)","#FBF6EE"]];
-$("#legend").innerHTML=G.map(([g,l,c,bg])=>`<li><span class="sw" style="border-color:${c};background:${bg}"></span>${l}<b>${cnt(r=>accGroup(r.access)===g)}</b></li>`).join("")+`<li><span class="sw" style="border:0;background:var(--coral);border-radius:50%;width:10px;height:10px;margin:0 4px"></span>Only partly buildable<b>${n-by}</b></li>`;
+const G=[["self","Self-serve (free, trial or open source)","#8EC5FF","rgba(142,197,255,.28)"],["appr","Paid plan or needs approval","#d9b98f","rgba(229,201,163,.45)"],["gate","Sales-gated","#b4543a","rgba(180,84,58,.30)"],["unc","Unclear","rgba(59,36,24,.3)","#FBF6EE"]];
+$("#legend").innerHTML=G.map(([g,l,c,bg])=>`<li><span class="sw" style="border-color:${c};background:${bg}"></span>${l}<b>${cnt(r=>accGroup(r.access)===g)}</b></li>`).join("")+`<li><span class="sw" style="border:0;background:#b4543a;border-radius:50%;width:13px;height:13px;margin:0 3px"></span>Only partly buildable<b>${n-by}</b></li>`;
 const peek=r=>{$("#peek").innerHTML=`<div class="pn">${esc(r.app)}</div><p class="small soft" style="margin:0">${esc(r.what)}</p><dl><dt>Auth</dt><dd>${esc(r.auth.join(", "))}</dd><dt>Access</dt><dd>${esc(r.access)}</dd><dt>API</dt><dd>${esc(r.api)}, ${esc(r.breadth)}</dd><dt>MCP</dt><dd>${esc(r.mcp)}</dd><dt>Buildable</dt><dd>${esc(r.buildable)}</dd>${r.blocker?`<dt>Blocker</dt><dd>${esc(r.blocker)}</dd>`:""}</dl>`};
 document.querySelectorAll(".tile").forEach(t=>{const r=rows.find(x=>x.id==t.dataset.id);
  t.addEventListener("mouseenter",()=>peek(r));t.addEventListener("focus",()=>peek(r));
