@@ -28,7 +28,7 @@ a:hover{color:#d3e6dd}
 .wrap{max-width:1160px;margin:0 auto;padding:0 var(--s5)}
 .measure{max-width:64ch}
 h1,h2,h3{font-family:var(--disp);font-weight:500;font-stretch:96%;letter-spacing:-.028em;margin:0;color:var(--text)}
-h1{font-size:clamp(44px,6.2vw,82px);line-height:1;letter-spacing:-.036em}
+h1{font-size:clamp(40px,4.9vw,66px);line-height:1.02;letter-spacing:-.034em}
 h2{font-size:clamp(32px,3.6vw,46px);line-height:1.05;margin-bottom:var(--s4)}
 h3{font-size:21px;line-height:1.25;font-weight:500;letter-spacing:-.01em;margin-bottom:var(--s3)}
 p{margin:0 0 var(--s4)}
@@ -43,6 +43,7 @@ section{padding:var(--s9) 0}
 .fl{position:absolute;width:52px;height:52px;border-radius:14px;background:var(--panel);border:1px solid var(--line2);display:grid;place-items:center;
  box-shadow:0 18px 30px -18px rgba(0,0,0,.7);animation:bob var(--d,9s) ease-in-out infinite alternate;opacity:.0;transition:opacity 1.2s}
 .fl.on{opacity:var(--o,.55)}
+@media(max-width:960px){.float-field{display:none}}
 .fl img{width:26px;height:26px;border-radius:6px}
 @keyframes bob{from{transform:translate3d(0,-10px,0) rotate(var(--r,-4deg))}to{transform:translate3d(var(--x,6px),12px,0) rotate(calc(var(--r,-4deg)*-1))}}
 .hero-grid>*{animation:enter 1s cubic-bezier(.2,.8,.2,1) both}.hero-grid>*+*{animation-delay:.18s}
@@ -50,7 +51,7 @@ section{padding:var(--s9) 0}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:var(--s7);align-items:center;width:100%}
 .byline{font-size:15px;color:var(--soft);margin-bottom:var(--s5)}
 .byline b{color:var(--text);font-weight:600}
-.hero p.lede{margin:var(--s5) 0 var(--s6);max-width:34ch}
+.hero p.lede{margin:var(--s5) 0 var(--s6);max-width:40ch;font-size:18.5px}
 .counter{display:flex;align-items:center;gap:var(--s4);margin-bottom:var(--s5)}
 .counter .lbl{font-size:15px;color:var(--soft);line-height:1.3}
 .hero-links{display:flex;gap:var(--s5);flex-wrap:wrap;font-size:15.5px}
@@ -61,6 +62,7 @@ section{padding:var(--s9) 0}
 .ch{position:relative;display:inline-block;width:.78em;height:1.28em;font:600 1em/1.28em var(--mono);text-align:center;color:#ecebe3;
  background:linear-gradient(#26302d 0 49.4%,#0d1110 49.4% 50.6%,#222b28 50.6%);border-radius:4px;box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 2px 0 #080b0a;perspective:200px}
 .ch.flip{animation:flip .11s linear}
+.brow .ch.blank{background:none;box-shadow:none}
 @keyframes flip{0%{transform:rotateX(0)}50%{transform:rotateX(-82deg);filter:brightness(.6)}100%{transform:rotateX(0)}}
 .big .ch{font-size:44px}
 .board{background:var(--deep);border:1px solid var(--line);border-radius:18px;padding:var(--s5);box-shadow:0 40px 80px -40px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.04)}
@@ -180,7 +182,7 @@ footer{padding:var(--s7) 0 var(--s8);border-top:1px solid var(--line);font-size:
 </head>
 <body>
 <main>
-<header class="hero" data-fx="prism-dispersion" data-fx-seed="21" data-fx-params='{"splitX":0.56,"splitY":0.12,"fanSpread":0.5,"calm":0.85,"calmX":0.24,"calmY":0.5,"intensity":0.9}'>
+<header class="hero" data-fx="prism-dispersion" data-fx-seed="21" data-fx-params='{"splitX":0.72,"splitY":0.86,"fanSpread":0.38,"bend":18,"calm":1,"calmX":0.25,"calmY":0.45,"intensity":0.6,"haze":0.35}'>
  <div class="float-field" id="float" aria-hidden="true"></div>
  <div class="wrap hero-grid">
   <div>
@@ -291,7 +293,7 @@ const pct=x=>Math.round(100*x/n);
 const CH=" ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.-&()";
 function flapSet(el,text,len){text=text.toUpperCase().padEnd(len," ").slice(0,len);
  if(el.children.length!==len){el.innerHTML="";for(let i=0;i<len;i++){const c=document.createElement("span");c.className="ch";c.textContent=" ";el.appendChild(c)}}
- [...el.children].forEach((c,i)=>{const target=text[i];if(c.textContent===target)return;
+ [...el.children].forEach((c,i)=>{const target=text[i];c.classList.toggle("blank",target===" ");if(c.textContent===target)return;
   if(reduce){c.textContent=target;return}
   let steps=4+Math.floor(Math.random()*5),k=0;
   const tick=()=>{c.classList.remove("flip");void c.offsetWidth;c.classList.add("flip");
@@ -299,14 +301,15 @@ function flapSet(el,text,len){text=text.toUpperCase().padEnd(len," ").slice(0,le
   setTimeout(tick,i*28)})}
 /* counter rolls to 100 */
 const ctr=$("#ctr");flapSet(ctr,"000",3);
-(()=>{let v=0;const go=()=>{v=Math.min(n,v+(v<80?7:3));flapSet(ctr,String(v).padStart(3,"0"),3);if(v<n)setTimeout(go,reduce?0:120)};setTimeout(go,500)})();
+(()=>{let v=0;const plain=t=>[...ctr.children].forEach((c,i)=>{if(c.textContent!==t[i]){c.classList.remove("flip");void c.offsetWidth;c.classList.add("flip");c.textContent=t[i]}});
+ const go=()=>{v=Math.min(n,v+(v<90?3:1));plain(String(v).padStart(3,"0"));if(v<n)setTimeout(go,reduce?0:38)};setTimeout(go,600)})();
 /* departure board */
 const B=7,board=$("#board");
 for(let i=0;i<B;i++)board.insertAdjacentHTML("beforeend",`<div class="brow"><div class="logo"></div><div><span class="flapline name"></span><div class="meta"></div></div><div class="status"></div></div>`);
 const brs=[...board.children];let ptr=0;
 function setRow(i,r){const el=brs[i],lg=el.querySelector(".logo");lg.classList.add("swap");
  setTimeout(()=>{lg.innerHTML=img(r);lg.classList.remove("swap")},reduce?0:180);
- flapSet(el.querySelector(".name"),r.app.replace(/\s*\(.*\)/,""),14);
+ flapSet(el.querySelector(".name"),r.app.replace(/\s*\(.*\)/,"").replace(/\.com$/i,""),12);
  el.querySelector(".meta").textContent=r.auth.join(" + ")+" · "+r.access;
  const [t,c]=status(r),s=el.querySelector(".status");s.className="status "+c;s.textContent=t}
 const order=[...rows].sort((a,b)=>((a.id*37)%101)-((b.id*37)%101));
@@ -315,7 +318,7 @@ let bi=0;if(!reduce)setInterval(()=>{if(document.hidden)return;setRow(bi%B,order
 const by=rows.filter(r=>r.buildable==="yes").length;$("#bstat").textContent=`${by} buildable · ${n-by} partial · 0 impossible`;
 /* floating logos */
 const ff=$("#float"),picks=[2,81,62,21,71,41,55,95].map(id=>rows.find(r=>r.id===id)).filter(Boolean);
-const spots=[[4,12],[14,78],[46,6],[38,88],[2,52],[52,64],[30,30],[60,90],[90,12],[86,58],[70,40],[94,84],[22,94],[64,18]];
+const spots=[[95,8],[93,46],[88,90],[56,93],[68,4],[97,72],[40,96],[80,96]];
 picks.forEach((r,i)=>{const [x,y]=spots[i%spots.length];const d=document.createElement("div");d.className="fl";
  d.style.cssText=`left:${x}%;top:${y}%;--d:${7+i%5*1.7}s;--r:${(i%2?-1:1)*(3+i%4)}deg;--x:${(i%3-1)*8}px;--o:${.16+(i%4)*.07}`;
  d.innerHTML=img(r);ff.appendChild(d);setTimeout(()=>d.classList.add("on"),300+i*90)});
