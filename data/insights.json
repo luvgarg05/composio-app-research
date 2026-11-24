@@ -1,7 +1,7 @@
 {
  "title": "Can Composio build a toolkit for these 100 apps? An agent researched them, then had to prove it.",
  "headlines": [
-  "<b>88 of 100 apps are buildable today, and none are technically impossible.</b> The 12 \"partial\" apps are blocked by <i>commercial</i> gates (a sales contract, an admin approval, an enterprise plan), not by missing APIs. So the bottleneck for the long tail is partnerships and outreach, not engineering.",
+  "<b>88 of 100 apps are buildable today, and none are technically impossible.</b> The 12 \"partial\" apps are blocked by commercial gates (a sales contract, an admin approval, an enterprise plan), not by missing APIs. So the bottleneck for the long tail is partnerships and outreach, not engineering.",
   "<b>MCP has become standard:</b> 86 of 100 vendors now publish an official MCP server. Coverage is no longer the question; what matters is whether the vendor's MCP covers the same surface as the API. Several (Coda, Otter, Higgsfield) use OAuth only on the MCP while the REST API uses a different credential.",
   "<b>72% are self-serve for a developer</b> (free tier, free trial or open source). Gating clusters by category: <b>Developer/Infra has zero gated apps</b>, while <b>AI-native, Ecommerce and Finance</b> have the most approval, paid or sales-led access.",
   "<b>Auth is a mix, not a standard:</b> 58% support OAuth2, 52% personal/Bearer tokens, 28% plain API keys, 14% HTTP Basic. Many apps offer two methods (OAuth for multi-tenant apps, a token for single-workspace use), so a toolkit usually needs both.",
