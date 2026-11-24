@@ -2,3 +2,4 @@
 __pycache__/
 *.pyc
 .venv/
+agent/page_template_plain.html
