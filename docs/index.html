@@ -6,7 +6,7 @@
 <title>100 apps, checked for agent-readiness — Lavanya Garg for Composio</title>
 <meta name="description" content="A research agent checked 100 apps for auth, developer access, API surface and MCP, with a source for every answer and measured accuracy.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wdth,wght@75..100,400..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
 <style>
 :root{
@@ -183,6 +183,77 @@ footer{padding:var(--s7) 0 var(--s8);border-top:1px solid var(--line);font-size:
  section{padding:var(--s8) 0}.big .ch{font-size:32px}.hero{min-height:auto}}
 @media(max-width:560px){.tiles{grid-template-columns:repeat(5,1fr)}.board-head,.brow{grid-template-columns:30px 1fr 96px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.bar .f{transform:scaleX(var(--w))}}
+
+/* ===== cream / brown / baby blue (client reference) ===== */
+:root{--bg:#F2E8DA;--deep:#EADCC8;--panel:#FBF6EE;--line:rgba(59,36,24,.13);--line2:rgba(59,36,24,.24);
+ --text:#3B2418;--soft:#6E5546;--dim:#9A8473;--sky:#8EC5FF;--sage:#3d7fc4;--amber:#a8743c;--coral:#b4543a;
+ --serif:'Instrument Serif',Georgia,serif}
+html,body{background:#F2E8DA;color:#3B2418}
+body:before{opacity:.5}
+section:nth-of-type(odd),.hero{background:none}
+h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;font-stretch:100%}
+h1{font-size:clamp(48px,6vw,84px);line-height:1}
+h1 em,h2 em{font-style:italic}
+h2{font-size:clamp(38px,4.4vw,60px);line-height:1.02}
+h3{color:#3B2418}
+.byline{color:var(--soft)}.byline b{color:#3B2418}
+.lede,.find p,.plain li,.steps p{color:var(--soft)}
+.find p b,.plain li b,.headlines b{color:#3B2418}
+.hero-links a{color:#3B2418;border-bottom:1.5px solid rgba(59,36,24,.25)}.hero-links a:hover{color:#3B2418;border-color:#8EC5FF}
+a{color:#2f6fae}a:hover{color:#3B2418}
+.counter .lbl{color:var(--soft)}
+/* the board: a brown object floating on the cream page */
+.board{--text:#F2E8DA;--soft:#d4c1ad;--dim:#a99380;--line:rgba(242,232,218,.12);background:#3B2418;border:0;color:#F2E8DA;
+ box-shadow:0 50px 90px -40px rgba(59,36,24,.55),0 18px 30px -18px rgba(59,36,24,.35)}
+.board:before{background:radial-gradient(closest-side,rgba(142,197,255,.55),transparent 70%);opacity:.9}
+.brow+.brow{border-top:1px dashed rgba(242,232,218,.10)}
+.brow .logo{background:#4d3326}
+.ch{color:#F2E8DA;background:linear-gradient(#55382a 0 49.4%,#2a1810 49.4% 50.6%,#4a3024 50.6%);box-shadow:inset 0 1px 0 rgba(255,235,210,.08),0 2px 0 #24140c}
+.st-yes{background:#8EC5FF;color:#23324a}.st-part{background:#E5C9A3;color:#4a2f1f}.st-gate{background:#e3a58f;color:#4a1f12}
+/* findings numbers */
+.find .k,.find .num{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;color:#3B2418}
+.find .k.sky{color:#2f6fae}.find .k.sage{color:#3B2418}.find .k.amber{color:#2f6fae}
+.find.lead{border-color:var(--line)}
+/* statement */
+.statement{border-color:var(--line)}
+.statement .mo-lt__type{font-family:var(--serif);font-weight:400;color:#3B2418;text-shadow:none;letter-spacing:-.02em}
+/* tiles */
+.cat-row{border-color:var(--line)}.cat-row .cname{color:#3B2418}
+.tile{background:#FBF6EE}
+.t-self{border-color:#8EC5FF;background:rgba(142,197,255,.28)}
+.t-appr{border-color:#d9b98f;background:rgba(229,201,163,.45)}
+.t-gate{border-color:#c4705a;background:rgba(227,165,143,.45)}
+.t-unc{border-color:rgba(59,36,24,.3)}
+.tile .fb{color:#6E5546}.tile.partial:after{border-color:#F2E8DA;background:#b4543a}
+.tile:hover,.tile:focus-visible{box-shadow:0 12px 22px -12px rgba(59,36,24,.45)}
+.key li{color:var(--soft)}.key li b{color:#3B2418}
+.peek{background:#FBF6EE;border-color:var(--line);box-shadow:0 20px 40px -30px rgba(59,36,24,.4)}
+.peek dt{color:var(--dim)}.peek dd{color:#3B2418}
+.bar .t{background:rgba(59,36,24,.10)}.bar .f{background:#3B2418}.bar .n{color:var(--soft)}
+/* table */
+.tools input,.tools select{background:#FBF6EE;color:#3B2418;border-color:var(--line2)}
+.tools select option{background:#FBF6EE}
+.tablebox{background:#FBF6EE;border-color:var(--line);box-shadow:0 24px 50px -36px rgba(59,36,24,.35)}
+th{background:#F4EBDF;color:var(--soft);border-color:var(--line)}td{border-color:var(--line)}
+tbody tr:hover{background:#F6EEE3}
+td .ap img{background:#EADCC8}
+.tag{background:#EFE4D4;color:#4a3426}
+.tag.g{background:rgba(142,197,255,.35);color:#23466b}.tag.a{background:rgba(229,201,163,.6);color:#6b4422}.tag.r{background:rgba(227,165,143,.5);color:#7a2f1c}.tag.s{background:rgba(142,197,255,.35);color:#23466b}
+/* agent */
+.steps:before{background:linear-gradient(90deg,var(--line2),#8EC5FF,var(--line2))}
+.steps li:before{background:#F2E8DA;border-color:var(--line2);color:#2f6fae}
+.plain li{border-color:var(--line)}
+/* verification */
+.climb{border-color:var(--line);background:#FBF6EE}.climb>div{border-color:var(--line)}
+.climb .v{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;color:#3B2418}
+.climb>div:last-child{background:rgba(142,197,255,.22)}.climb>div:last-child .v{color:#2f6fae;text-shadow:none}
+.climb .meter{background:rgba(59,36,24,.10)}.climb .meter i{background:#3B2418}.climb>div:last-child .meter i{background:#8EC5FF;box-shadow:none}
+.mini td.hi{color:#2f6fae}
+.miss{border-color:var(--line)}.miss del{color:#b4543a}.miss ins{color:#2f6fae}
+details{border-color:var(--line)}details .fx{border-color:var(--line);color:var(--soft)}
+pre{background:#3B2418;color:#F2E8DA;border:0}pre .c{color:#b9a28c}
+footer{border-color:var(--line);color:var(--dim)}footer a{color:#2f6fae}
+:focus-visible{outline-color:#2f6fae}
 </style>
 </head>
 <body>
@@ -192,7 +263,7 @@ footer{padding:var(--s7) 0 var(--s8);border-top:1px solid var(--line);font-size:
  <div class="wrap hero-grid">
   <div>
    <p class="byline"><b>Lavanya Garg</b>, take-home for Composio's AI Product Ops internship</p>
-   <h1 id="title">100 apps, checked for agent‑readiness.</h1>
+   <h1 id="title">100 apps, checked for <em>agent‑readiness</em>.</h1>
    <p class="lede">An agent built on Composio's SDK found out how each app signs you in, who can get a key, what its API covers and whether an MCP server exists. Every answer links to its source.</p>
    <div class="counter"><span class="flapline big" id="ctr" aria-label="100 apps"></span><span class="lbl">apps researched,<br>each with an evidence link</span></div>
    <nav class="hero-links" aria-label="Sections"><a href="#tiles">Every app at a glance</a><a href="#findings">What we found</a><a href="#table">The full table</a><a href="#agent">How the agent works</a><a href="#verify">How we checked it</a></nav>
